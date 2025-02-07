@@ -53,7 +53,7 @@ I'm excited to learn about GenAI and build some cool projects.  I'm hoping this 
 
 ## Connect with Me
 
-*   wwww.linkedin.com/in/brandon-copeland64
+*   www.linkedin.com/in/brandon-copeland64
 *   https://x.com/BCopela80821946
 
 ## License
