@@ -13,7 +13,7 @@ This repository is where I'll be storing all the code, diagrams, and resources I
 
 ## Bootcamp Overview
 
-The GenAI Bootcamp will cover the following topics (Adapted from the GenAI Essentials Course as the GenAI Bootcamp syllabus is still under development:
+The GenAI Bootcamp will cover the following topics (Adapted from the GenAI Essentials Course as the GenAI Bootcamp syllabus is still under development):
 
 *   **Module 1: AI and ML Fundamentals**
     *   What is AI?
