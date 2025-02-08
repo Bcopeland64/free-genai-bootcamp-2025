@@ -201,7 +201,7 @@ The GenAI Bootcamp will cover the following topics (Adapted from the GenAI Essen
     cd [repository name]
     ```
 
-2.  **Explore the Modules:**  Browse the directories for each module to see my progress and the resources I'm using.
+2.  **Explore the Modules:**  Browse the directories for each module to see my progress and the resources I'm using.I will update this repo as I continue through the bootcamp. Make sure to check back periodcally to see my progress. 
 
 <h2 style="color:green;">Why I'm Doing This</h2>
 
