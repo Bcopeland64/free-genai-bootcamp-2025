@@ -94,18 +94,12 @@ The GenAI Bootcamp will cover the following topics (Adapted from the GenAI Essen
 
 <h2 style="color:green;">Why I'm Doing This</h2>
 
-I'm excited to learn about GenAI and build some cool projects.  I'm hoping this bootcamp will give me a solid foundation in [mention your specific goals, e.g., "using LLMs for creative writing," or "building AI-powered applications"].
+I'm really looking forward to this GenAI bootcamp! I'm driven by a desire to understand the fundamental technologies behind GenAI, particularly LLMs and their architecture. I'm hoping this course will give me a strong grasp of these core concepts and enable me to explore more advanced topics in the future..
 
 <h2 style="color:green;">Connect with Me</h2>
 
 *   www.linkedin.com/in/brandon-copeland64
 *   https://x.com/BCopela80821946
-
-<h2 style="color:green;">License</h2>
-
-This project is licensed under the [Choose a License - e.g., MIT License] - see the `LICENSE` file for details.
-
-<h2 style="color:green;">Disclaimer</h2>
 
 The code and materials in this repository are based on my understanding of the bootcamp content and are for learning purposes.
 
