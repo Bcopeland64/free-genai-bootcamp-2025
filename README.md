@@ -205,7 +205,7 @@ The GenAI Bootcamp will cover the following topics (Adapted from the GenAI Essen
 
 <h2 style="color:green;">Why I'm Doing This</h2>
 
-I'm really looking forward to this GenAI bootcamp! I'm driven by a desire to understand the fundamental technologies behind GenAI, particularly LLMs and their architecture. I'm hoping this course will give me a strong grasp of these core concepts and enable me to explore more advanced topics in the future..
+I'm genuinely excited about starting this GenAI bootcamp. My main aim is to level up my skills and build a solid portfolio that will help me break into the AI Engineering field. Really hoping this course gives me that in-depth knowledge of GenAI's inner workings – especially LLMs – so I can tackle more complex challenges down the road.
 
 <h2 style="color:green;">Connect with Me</h2>
 
