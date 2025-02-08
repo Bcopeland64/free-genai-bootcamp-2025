@@ -15,7 +15,7 @@ This repository is where I'll be storing all the code, diagrams, and resources I
 
 The GenAI Bootcamp will cover the following topics (Adapted from the GenAI Essentials Course as the GenAI Bootcamp syllabus is still under development):
 
-*   <strong style="color:red;">Module 1: AI and ML Fundamentals</strong>
+*   **Module 1: AI and ML Fundamentals**
     *   What is AI?
     *   AI vs GenAI
     *   Jupyter Notebooks
@@ -55,7 +55,7 @@ The GenAI Bootcamp will cover the following topics (Adapted from the GenAI Essen
     *   What is Inference?
     *   What are Parameters and Hyperparameters?
     *   Responsible AI
-*   <strong style="color:red;">Module 2: Gen AI Primer</strong>
+*   **Module 2: Gen AI Primer**
     *   AI vs GenAI
     *   What is a Foundational Model
     *   What is a Large Language Model?
@@ -66,7 +66,7 @@ The GenAI Bootcamp will cover the following topics (Adapted from the GenAI Essen
     *   Positional Encoding
     *   Attention
     *   Fine-Tuning LLMs
-*   <strong style="color:red;">Module 3: Data and ML</strong>
+*   **Module 3: Data and ML**
     *   What is Labeling?
     *   What is Data Mining?
     *   Data Mining Methods
@@ -79,7 +79,118 @@ The GenAI Bootcamp will cover the following topics (Adapted from the GenAI Essen
     *   Train vs Test vs Validation DataSet
     *   Corpus
     *   What is a Data Type?
-*   ... (continue for other modules)
+*   **Module 4: LLM Basics**
+    *   Leaderboards Consult with Rola
+*   **Module 5: AI Powered Assistants**
+    *   AI Powered Assistants
+*   **Module 6: Environment Setup**
+    *   Google Colab and SageMaker Studio Labs
+    *   SageMaker Notebooks
+    *   Azure ML Notebooks
+    *   Lightning AI Basics
+    *   Gitpod
+    *   GitHub Codespaces
+    *   Deepnote
+    *   Setup Conda
+    *   Installing Python Libraries with Conda
+    *   VSCode Notebooks Ipykernel
+    *   Jupyter Lab Setup
+*   **Module 7: Prompt Engineering**
+    *   Zero Shot
+    *   Few Shot
+    *   Chaining
+    *   Chain of Thought
+    *   Tree of Thought
+    *   Tree-of-Thought Lab
+    *   CO-STAR
+    *   reAct
+*   **Module 8: WorkBenches and Playgrounds**
+    *   Open AI Playground
+    *   Anthropic Workbench
+    *   Google Vertex AI Workbench
+    *   Cohere Playground
+    *   AI21 Playground
+*   **Module 9: Model as a Service**
+    *   Amazon Bedrock Basics
+    *   Google Vertex AI
+    *   Google Cloud Vertex AI Studio
+    *   Azure AI Foundry
+*   **Module 10: LLM DevTools and Workflow**
+    *   Hugging Face Pipelines
+    *   Hugging Face Direct Model Lab
+    *   Hugging Face Spaces
+    *   Hugging Face Datasets
+    *   Ollama
+    *   Ollama
+    *   Llamafile
+    *   Lllamafile Lab
+    *   LangChain
+    *   LlamaIndex
+    *   Llama.cpp
+    *   Llama.cpp Lab
+    *   Bitnet.cpp
+    *   GGUF and GGML
+    *   Context Caching
+    *   Structured Generation
+    *   Instructor
+    *   Open WebUI
+*   **Module 11: AI Code Assistants**
+    *   GitHub Copilot Lab
+    *   Amazon Q Developer
+    *   Gemini Code Assist
+    *   Codeium Windsurf
+    *   Cursor AI
+    *   SourceGraph Cody
+    *   StakPak
+*   **Module 12: App Prototyping**
+    *   v0 Lab
+    *   Gradio
+    *   Streamlit Lab
+    *   Lovable
+    *   FastHTML
+*   **Module 13: Containers**
+    *   Sandboxing
+    *   OPEA
+    *   OPEA Lab
+*   **Module 14: Serving**
+    *   KServe
+    *   vLLM
+    *   Ray
+    *   TGI and TEI
+    *   TensorRT LLM
+*   **Module 15: AI Delivery Platform**
+    *   Intel Tiber AI Cloud
+    *   Runpod AI
+    *   Groq
+    *   Replicate
+    *   CloudFlare AI Workers
+*   **Module 16: GenAI Hardware**
+    *   TPUs
+    *   iGPUs
+    *   VPUs
+    *   Intel Xeon Scalable and Intel Gaudi
+    *   What is a GPU
+    *   What is CUDA
+*   **Module 17: LLM Customization**
+    *   Medusa
+    *   SFT
+    *   Flash Attention
+    *   litGPT
+*   **Module 18: Size Optimization**
+    *   Quantization
+    *   Distillation
+    *   Quantization with Rola
+*   **Module 19: RAGS**
+    *   Pinecone
+    *   ElasticSearch
+    *   MongoDB
+    *   Plastic Love
+    *   PgVector
+    *   SerpAPI
+*   **Module 20: Agents**
+    *   OpenHands
+    *   CrewAI
+
 
 <h2 style="color:green;">Getting Started</h2>
 
