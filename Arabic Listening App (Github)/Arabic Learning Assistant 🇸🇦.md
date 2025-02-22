@@ -176,42 +176,9 @@ arabic-learning-assistant/
 
 ------
 
-## Contributing 🤝
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-
-2. Create a new branch:
-
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-3. Commit your changes:
-
-   ```bash
-   git commit -m "Add your feature"
-   ```
-
-4. Push to the branch:
-
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-
-5. Open a pull request.
-
-------
-
-## License 📛
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-------
-
 ## Acknowledgments 🙏
 
+- Andrew Brown (GenAI Bootcamp Teacher)
 - Hugging Face for the Arabic GPT model.
 - Streamlit for the web framework.
 - ChromaDB for vector storage.
