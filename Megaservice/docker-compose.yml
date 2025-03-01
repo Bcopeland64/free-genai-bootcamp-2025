@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    volumes:
+      - ollama-models:/root/.ollama
+    ports:
+      - "8008:11434"
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+      - OLLAMA_MODELS=/root/.ollama/models
+      - LLM_MODEL_ID=${LLM_MODEL_ID:-llama3.2:1b}
+    restart: unless-stopped
+    networks:
+      - ollama-network
+
+networks:
+  ollama-network:
+    driver: bridge
+
+volumes:
+  ollama-models:
+    driver: local
