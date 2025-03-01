@@ -2,11 +2,12 @@ import os
 import sys
 import streamlit as st
 import time
+import json
 
 # Add the parent directory to the path to import our apps
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from apps import TextGenerator, ModelManager, check_ollama_connection
+from apps import TextGenerator, ModelManager, PaperRetriever, check_ollama_connection
 
 # Set page configuration
 st.set_page_config(
@@ -67,6 +68,26 @@ st.markdown("""
         min-height: 200px;
         margin-top: 16px;
     }
+    .paper-container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 16px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        margin-bottom: 16px;
+    }
+    .paper-title {
+        font-weight: bold;
+        font-size: 18px;
+        color: #1E3A8A;
+    }
+    .paper-authors {
+        font-style: italic;
+        margin-bottom: 8px;
+    }
+    .paper-abstract {
+        font-size: 14px;
+        margin-top: 8px;
+    }
     h1, h2, h3 {
         color: #1E3A8A;
     }
@@ -89,8 +110,12 @@ if 'text_generator' not in st.session_state:
     st.session_state.text_generator = TextGenerator()
 if 'model_manager' not in st.session_state:
     st.session_state.model_manager = ModelManager()
+if 'paper_retriever' not in st.session_state:
+    st.session_state.paper_retriever = PaperRetriever()
 if 'generated_text' not in st.session_state:
     st.session_state.generated_text = ""
+if 'retrieved_papers' not in st.session_state:
+    st.session_state.retrieved_papers = None
 if 'selected_model' not in st.session_state:
     st.session_state.selected_model = st.session_state.text_generator.model_name
 if 'available_models' not in st.session_state:
@@ -134,15 +159,35 @@ def generate_text():
         except Exception as e:
             st.error(f"Error generating text: {str(e)}")
 
+# Function to retrieve academic papers
+def retrieve_papers():
+    query = st.session_state.paper_query
+    search_source = st.session_state.search_source
+    
+    if not query:
+        st.error("Please enter a search query first.")
+        return
+    
+    with st.spinner("Retrieving academic papers... This might take a while."):
+        try:
+            result = st.session_state.paper_retriever.retrieve_papers(
+                query=query,
+                search_source=search_source
+            )
+            st.session_state.retrieved_papers = result
+        except Exception as e:
+            st.error(f"Error retrieving papers: {str(e)}")
+
 # Function to change the model
 def change_model():
     new_model = st.session_state.model_selector
     st.session_state.text_generator.set_model(new_model)
+    st.session_state.paper_retriever.set_model(new_model)
     st.session_state.selected_model = new_model
     st.success(f"Model changed to {new_model}")
 
 # Create tabs for different functionalities
-tab1, tab2 = st.tabs(["Text Generation", "Model Management"])
+tab1, tab2, tab3 = st.tabs(["Text Generation", "Academic Paper Retrieval", "Model Management"])
 
 # Tab 1: Text Generation
 with tab1:
@@ -186,8 +231,89 @@ with tab1:
         else:
             st.markdown('<div class="output-container"><i>Generated text will appear here</i></div>', unsafe_allow_html=True)
 
-# Tab 2: Model Management
+# Tab 2: Academic Paper Retrieval
 with tab2:
+    st.header("Academic Paper Retrieval")
+    st.markdown("Search for academic papers using OPEA-powered agents")
+    
+    with st.container():
+        col1, col2 = st.columns([3, 1])
+        
+        with col1:
+            st.markdown("### Search Query")
+            st.text_area("Enter your research topic or keywords:", key="paper_query", height=100, 
+                        placeholder="What academic papers are you looking for? For example: 'Transformer models in natural language processing'")
+        
+        with col2:
+            st.markdown("### Search Settings")
+            
+            # Search source selection
+            st.selectbox("Search Source:", 
+                        ["all", "google_scholar", "arxiv"], 
+                        key="search_source",
+                        help="Where to search for papers")
+            
+            # Use the same model as Text Generation
+            st.markdown(f"**Using model:** {st.session_state.selected_model}")
+    
+    # Search button
+    if st.button("Search for Papers", key="search_button", use_container_width=True):
+        retrieve_papers()
+    
+    # Results container
+    st.markdown("### Search Results")
+    results_container = st.container()
+    
+    with results_container:
+        if st.session_state.retrieved_papers:
+            result = st.session_state.retrieved_papers
+            
+            if result.get('success', False):
+                # Display the agent's summary
+                st.markdown("#### Summary")
+                st.markdown(f'<div class="output-container">{result["result"]}</div>', unsafe_allow_html=True)
+                
+                # Try to extract paper information from the result
+                try:
+                    # First check if we have a list of paper dictionaries
+                    papers = []
+                    if isinstance(result.get('papers', []), list) and len(result.get('papers', [])) > 0:
+                        papers = result['papers']
+                    
+                    # If no structured papers found, try to parse them from the output
+                    if not papers and isinstance(result.get('result', ''), str):
+                        # This is a fallback if papers aren't structured properly
+                        st.markdown("#### Papers Found")
+                        st.markdown(f'<div class="output-container">{result["result"]}</div>', unsafe_allow_html=True)
+                    else:
+                        # Display structured paper information
+                        st.markdown("#### Papers Found")
+                        for i, paper in enumerate(papers):
+                            with st.expander(f"{i+1}. {paper.get('title', 'Unknown Title')}"):
+                                st.markdown(f"**Authors:** {paper.get('authors', 'Unknown')}")
+                                if 'year' in paper:
+                                    st.markdown(f"**Year:** {paper.get('year')}")
+                                if 'published' in paper:
+                                    st.markdown(f"**Published:** {paper.get('published')}")
+                                if 'citations' in paper:
+                                    st.markdown(f"**Citations:** {paper.get('citations')}")
+                                if 'abstract' in paper:
+                                    st.markdown("**Abstract:**")
+                                    st.markdown(paper.get('abstract'))
+                                if 'url' in paper:
+                                    st.markdown(f"[View Paper]({paper.get('url')})")
+                                if 'pdf_url' in paper:
+                                    st.markdown(f"[Download PDF]({paper.get('pdf_url')})")
+                
+                except Exception as e:
+                    st.error(f"Error displaying paper information: {str(e)}")
+            else:
+                st.error(f"Failed to retrieve papers: {result.get('error', 'Unknown error')}")
+        else:
+            st.markdown('<div class="output-container"><i>Search results will appear here</i></div>', unsafe_allow_html=True)
+
+# Tab 3: Model Management
+with tab3:
     st.header("Model Management")
     
     # Refresh button for model list
