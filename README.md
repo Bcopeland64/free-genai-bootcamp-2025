@@ -14,7 +14,6 @@ This repository is where I'll be storing all the code, diagrams, and resources I
 <h2 style="color:green;">Bootcamp Overview</h2>
 
 The GenAI Bootcamp will cover the following topics (Adapted from the GenAI Essentials Course as the GenAI Bootcamp syllabus is still under development):
-# ExamPro GenAI Bootcamp Overview
 
 ## Module Structure
 
