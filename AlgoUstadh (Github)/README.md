@@ -120,5 +120,14 @@ We welcome contributions from the community! If you'd like to add a new feature,
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+### Screens
+
+![Screenshot from 2025-03-09 15:13:04](https://github.com/Bcopeland64/free-genai-bootcamp-2025/blob/dc4dee23564538885cc39259bb9022496f56cbca/AlgoUstadh%20(Github)/screens/Screenshot%20from%202025-03-09%2015-13-04.png)
+![Screenshot from 2025-03-09 15:14:57](https://github.com/Bcopeland64/free-genai-bootcamp-2025/blob/dc4dee23564538885cc39259bb9022496f56cbca/AlgoUstadh%20(Github)/screens/Screenshot%20from%202025-03-09%2015-14-57.png)
+![Screenshot from 2025-03-09 15:16:49](https://github.com/Bcopeland64/free-genai-bootcamp-2025/blob/dc4dee23564538885cc39259bb9022496f56cbca/AlgoUstadh%20(Github)/screens/Screenshot%20from%202025-03-09%2015-16-49.png)
+![Screenshot from 2025-03-09 15:17:15](https://github.com/Bcopeland64/free-genai-bootcamp-2025/blob/dc4dee23564538885cc39259bb9022496f56cbca/AlgoUstadh%20(Github)/screens/Screenshot%20from%202025-03-09%2015-17-15.png)
+![Screenshot from 2025-03-09 15:18:02](https://github.com/Bcopeland64/free-genai-bootcamp-2025/blob/dc4dee23564538885cc39259bb9022496f56cbca/AlgoUstadh%20(Github)/screens/Screenshot%20from%202025-03-09%2015-18-02.png)
+![Screenshot from 2025-03-09 15:18:25](https://github.com/Bcopeland64/free-genai-bootcamp-2025/blob/dc4dee23564538885cc39259bb9022496f56cbca/AlgoUstadh%20(Github)/screens/Screenshot%20from%202025-03-09%2015-18-25.png)
+
 
 
