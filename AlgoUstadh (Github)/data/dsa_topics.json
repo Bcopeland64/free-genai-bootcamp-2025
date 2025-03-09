@@ -1,0 +1,107 @@
+[
+  {
+    "id": "arrays",
+    "name": "Arrays",
+    "level": "beginner",
+    "description": "Arrays are a fundamental data structure that store elements of the same type in contiguous memory locations. They provide O(1) access to elements by index.",
+    "time_complexity": {
+      "access": "O(1)",
+      "search": "O(n)",
+      "insertion": "O(n)",
+      "deletion": "O(n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Storing collections of similar items", "Implementing other data structures", "Buffering data", "Lookup tables"],
+    "order_num": 1
+  },
+  {
+    "id": "linked_lists",
+    "name": "Linked Lists",
+    "level": "beginner",
+    "description": "Linked lists are linear data structures where elements are stored in nodes, each pointing to the next node in the sequence. They provide efficient insertions and deletions.",
+    "time_complexity": {
+      "access": "O(n)",
+      "search": "O(n)",
+      "insertion": "O(1)",
+      "deletion": "O(1)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Dynamic memory allocation", "Implementing stacks and queues", "Adjacency lists for graphs", "Hash tables (chaining)"],
+    "order_num": 2
+  },
+  {
+    "id": "stacks",
+    "name": "Stacks",
+    "level": "beginner",
+    "description": "Stacks are abstract data types that follow the Last In, First Out (LIFO) principle. Elements are added and removed from the same end, called the top.",
+    "time_complexity": {
+      "push": "O(1)",
+      "pop": "O(1)",
+      "peek": "O(1)",
+      "search": "O(n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Function call management", "Expression evaluation", "Undo mechanisms", "Backtracking algorithms"],
+    "order_num": 3
+  },
+  {
+    "id": "queues",
+    "name": "Queues",
+    "level": "beginner",
+    "description": "Queues are abstract data types that follow the First In, First Out (FIFO) principle. Elements are added at the rear and removed from the front.",
+    "time_complexity": {
+      "enqueue": "O(1)",
+      "dequeue": "O(1)",
+      "peek": "O(1)",
+      "search": "O(n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Scheduling", "Breadth-first search", "Buffering", "Message queues in distributed systems"],
+    "order_num": 4
+  },
+  {
+    "id": "hash_tables",
+    "name": "Hash Tables",
+    "level": "intermediate",
+    "description": "Hash tables store key-value pairs and use a hash function to map keys to array indices, providing efficient lookups, insertions, and deletions.",
+    "time_complexity": {
+      "search": "O(1) average, O(n) worst",
+      "insertion": "O(1) average, O(n) worst",
+      "deletion": "O(1) average, O(n) worst"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Implementing dictionaries", "Database indexing", "Caching", "Counting frequencies"],
+    "order_num": 5
+  },
+  {
+    "id": "trees",
+    "name": "Trees",
+    "level": "intermediate",
+    "description": "Trees are hierarchical data structures consisting of nodes with parent-child relationships. They are widely used for representing hierarchical relationships.",
+    "time_complexity": {
+      "search": "O(log n) to O(n)",
+      "insertion": "O(log n) to O(n)",
+      "deletion": "O(log n) to O(n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Hierarchical data representation", "Binary search trees", "Expression parsing", "Decision trees"],
+    "order_num": 6
+  },
+  {
+    "id": "sorting",
+    "name": "Sorting Algorithms",
+    "level": "intermediate",
+    "description": "Algorithms that arrange elements in a specific order, typically ascending or descending. Different algorithms have various trade-offs in terms of time and space complexity.",
+    "algorithms": ["Bubble Sort", "Selection Sort", "Insertion Sort", "Merge Sort", "Quick Sort", "Heap Sort"],
+    "order_num": 7
+  },
+  {
+    "id": "dynamic_programming",
+    "name": "Dynamic Programming",
+    "level": "advanced",
+    "description": "A method for solving complex problems by breaking them down into simpler subproblems and storing the results to avoid redundant computation.",
+    "characteristics": ["Optimal substructure", "Overlapping subproblems", "Memoization", "Tabulation"],
+    "use_cases": ["Fibonacci sequence", "Shortest path algorithms", "Knapsack problem", "Sequence alignment"],
+    "order_num": 8
+  }
+]

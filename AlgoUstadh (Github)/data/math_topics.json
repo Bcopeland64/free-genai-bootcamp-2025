@@ -1,0 +1,63 @@
+[
+  {
+    "id": "calculus_limits",
+    "name": "Limits",
+    "level": "beginner",
+    "subcategory": "calculus",
+    "description": "Limits describe the behavior of a function as its input approaches a particular value.",
+    "key_formulas": [
+      "Definition: lim(x→a) f(x) = L means that for every ε > 0, there exists δ > 0 such that |f(x) - L| < ε whenever 0 < |x - a| < δ",
+      "lim(x→a) k = k (Constants)",
+      "lim(x→a) x = a (Identity)",
+      "lim(x→a) [f(x) + g(x)] = lim(x→a) f(x) + lim(x→a) g(x) (Sum Rule)",
+      "lim(x→a) [f(x) × g(x)] = lim(x→a) f(x) × lim(x→a) g(x) (Product Rule)"
+    ],
+    "order_num": 1
+  },
+  {
+    "id": "calculus_derivatives",
+    "name": "Derivatives",
+    "level": "beginner",
+    "subcategory": "calculus",
+    "description": "Derivatives measure the rate of change of a function with respect to one of its variables.",
+    "key_formulas": [
+      "Definition: f'(x) = lim(h→0) [f(x+h) - f(x)]/h",
+      "Power Rule: d/dx [x^n] = n×x^(n-1)",
+      "Product Rule: d/dx [f(x)×g(x)] = f'(x)×g(x) + f(x)×g'(x)",
+      "Chain Rule: d/dx [f(g(x))] = f'(g(x))×g'(x)",
+      "Quotient Rule: d/dx [f(x)/g(x)] = [f'(x)×g(x) - f(x)×g'(x)]/[g(x)]^2"
+    ],
+    "order_num": 2
+  },
+  {
+    "id": "linear_algebra_vectors",
+    "name": "Vectors",
+    "level": "beginner",
+    "subcategory": "linear_algebra",
+    "description": "Vectors are mathematical objects that have both magnitude and direction, fundamental to linear algebra.",
+    "key_formulas": [
+      "Vector addition: v + w = (v₁+w₁, v₂+w₂, ..., vₙ+wₙ)",
+      "Scalar multiplication: c·v = (c·v₁, c·v₂, ..., c·vₙ)",
+      "Dot product: v·w = v₁w₁ + v₂w₂ + ... + vₙwₙ",
+      "Magnitude: |v| = √(v₁² + v₂² + ... + vₙ²)",
+      "Cross product (3D): v×w = (v₂w₃-v₃w₂, v₃w₁-v₁w₃, v₁w₂-v₂w₁)"
+    ],
+    "order_num": 3
+  },
+  {
+    "id": "statistics_descriptive",
+    "name": "Descriptive Statistics",
+    "level": "beginner",
+    "subcategory": "statistics",
+    "description": "Descriptive statistics summarize and describe the main features of a collection of data.",
+    "key_formulas": [
+      "Mean: μ = (∑x)/n",
+      "Median: middle value of ordered data set",
+      "Mode: most frequent value in data set",
+      "Range: max value - min value",
+      "Variance: σ² = ∑(x-μ)²/n",
+      "Standard Deviation: σ = √(σ²)"
+    ],
+    "order_num": 4
+  }
+]

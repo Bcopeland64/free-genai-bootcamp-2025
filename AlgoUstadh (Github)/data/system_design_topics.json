@@ -1,0 +1,50 @@
+[
+  {
+    "id": "system_design_fundamentals",
+    "name": "System Design Fundamentals",
+    "level": "beginner",
+    "description": "Core concepts and principles that form the foundation of system design.",
+    "components": ["Requirements analysis", "Architectural patterns", "Performance considerations", "Scalability principles", "Reliability"],
+    "order_num": 1
+  },
+  {
+    "id": "scalability",
+    "name": "Scalability",
+    "level": "beginner",
+    "description": "Approaches to handle increasing loads and growing user bases.",
+    "components": ["Horizontal scaling", "Vertical scaling", "Load balancing", "Database sharding", "Caching strategies"],
+    "order_num": 2
+  },
+  {
+    "id": "load_balancing",
+    "name": "Load Balancing",
+    "level": "beginner",
+    "description": "Techniques for distributing traffic across multiple servers or resources.",
+    "components": ["Round Robin", "Least Connections", "Resource-based", "Hardware vs Software load balancers", "DNS load balancing"],
+    "order_num": 3
+  },
+  {
+    "id": "database_design",
+    "name": "Database Design",
+    "level": "intermediate",
+    "description": "Approaches to designing efficient, reliable, and scalable database systems.",
+    "components": ["Relational vs NoSQL", "Database normalization", "Indexing strategies", "Partitioning and sharding", "Replication"],
+    "order_num": 4
+  },
+  {
+    "id": "microservices",
+    "name": "Microservices Architecture",
+    "level": "intermediate",
+    "description": "Design patterns for building applications as suites of independently deployable services.",
+    "components": ["Service boundaries", "API design", "Service discovery", "Containerization", "Orchestration"],
+    "order_num": 5
+  },
+  {
+    "id": "distributed_systems",
+    "name": "Distributed Systems",
+    "level": "advanced",
+    "description": "Techniques for designing resilient systems across multiple machines or locations.",
+    "components": ["Consistency models", "CAP theorem", "Distributed transactions", "Fault tolerance", "Consensus algorithms"],
+    "order_num": 6
+  }
+]

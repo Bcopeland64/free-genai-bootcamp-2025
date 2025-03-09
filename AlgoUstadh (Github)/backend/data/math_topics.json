@@ -1,0 +1,377 @@
+[
+  {
+    "id": "calculus_limits",
+    "name": "Limits",
+    "description": "The foundation of calculus, defining how a function behaves as its input approaches a specific value. Limits formalize the concept of approaching a value and are essential for defining derivatives and integrals.",
+    "category": "math",
+    "subcategory": "calculus",
+    "level": "beginner",
+    "order_num": 1,
+    "key_formulas": [
+      "Definition: lim(x→a) f(x) = L",
+      "One-sided limits: lim(x→a⁺) f(x) and lim(x→a⁻) f(x)",
+      "Limit laws for algebraic operations",
+      "Limits at infinity: lim(x→∞) f(x)",
+      "Limits involving infinity: lim(x→a) f(x) = ∞"
+    ],
+    "applications": [
+      "Defining derivatives and integrals",
+      "Analyzing function behavior",
+      "Determining continuity",
+      "Series convergence",
+      "Asymptotic analysis"
+    ],
+    "misconceptions": [
+      "A limit is not a substitution (although it sometimes coincides)",
+      "Limits at discontinuities can still exist",
+      "Limits can exist even when the function is not defined at that point",
+      "A function can approach different values from different directions (one-sided limits)"
+    ]
+  },
+  {
+    "id": "calculus_derivatives",
+    "name": "Derivatives",
+    "description": "The rate of change of a function with respect to its variable. Derivatives measure how a function changes at any given point and are used to find slopes of curves, rates of change, and optimization.",
+    "category": "math",
+    "subcategory": "calculus",
+    "level": "beginner",
+    "order_num": 2,
+    "key_formulas": [
+      "Definition: f'(x) = lim(h→0) [f(x+h) - f(x)]/h",
+      "Power rule: d/dx(xⁿ) = n·xⁿ⁻¹",
+      "Product rule: d/dx[f(x)·g(x)] = f'(x)·g(x) + f(x)·g'(x)",
+      "Chain rule: d/dx[f(g(x))] = f'(g(x))·g'(x)",
+      "Exponential: d/dx(eˣ) = eˣ",
+      "Logarithmic: d/dx(ln x) = 1/x"
+    ],
+    "applications": [
+      "Finding slopes of tangent lines",
+      "Calculating rates of change",
+      "Optimization problems (maxima/minima)",
+      "Related rates",
+      "Motion analysis (velocity, acceleration)"
+    ],
+    "misconceptions": [
+      "Derivatives don't measure absolute change, but rate of change",
+      "A derivative of zero doesn't always indicate a minimum or maximum",
+      "The second derivative test has conditions for conclusive results",
+      "Differentiability implies continuity, but not vice versa"
+    ]
+  },
+  {
+    "id": "calculus_integrals",
+    "name": "Integrals",
+    "description": "The accumulation of quantities, such as areas under curves, volumes, or any quantity that accumulates over a range of values. Integrals are the inverse operation of differentiation and include both definite and indefinite forms.",
+    "category": "math",
+    "subcategory": "calculus",
+    "level": "intermediate",
+    "order_num": 3,
+    "key_formulas": [
+      "Indefinite integral: ∫f(x)dx = F(x) + C where F'(x) = f(x)",
+      "Definite integral: ∫ₐᵇf(x)dx = F(b) - F(a)",
+      "Fundamental Theorem of Calculus: d/dx[∫ₐˣf(t)dt] = f(x)",
+      "Integration by parts: ∫u(x)v'(x)dx = u(x)v(x) - ∫u'(x)v(x)dx",
+      "Integration by substitution: ∫f(g(x))g'(x)dx = ∫f(u)du where u = g(x)"
+    ],
+    "applications": [
+      "Area under a curve",
+      "Volume of solids of revolution",
+      "Work calculations",
+      "Probability distributions",
+      "Average value of a function",
+      "Solution of differential equations"
+    ],
+    "misconceptions": [
+      "Integration is not always the reverse of differentiation in a straightforward way",
+      "Not all functions have elementary antiderivatives",
+      "Improper integrals can converge even with discontinuities",
+      "Integration by parts requires careful choice of u and v"
+    ]
+  },
+  {
+    "id": "calculus_multivariate",
+    "name": "Multivariate Calculus",
+    "description": "The extension of calculus to functions of multiple variables. It includes partial derivatives, multiple integrals, and vector calculus, dealing with rates of change and accumulation in multiple dimensions.",
+    "category": "math",
+    "subcategory": "calculus",
+    "level": "advanced",
+    "order_num": 4,
+    "key_formulas": [
+      "Partial derivatives: ∂f/∂x, ∂f/∂y",
+      "Gradient: ∇f = (∂f/∂x, ∂f/∂y, ...)",
+      "Double integral: ∫∫R f(x,y) dA",
+      "Triple integral: ∫∫∫V f(x,y,z) dV",
+      "Divergence: div F = ∇·F = ∂P/∂x + ∂Q/∂y + ∂R/∂z",
+      "Curl: curl F = ∇×F",
+      "Line integral: ∫C F·dr"
+    ],
+    "applications": [
+      "Optimization in multiple variables",
+      "Surface area calculations",
+      "Volume calculations",
+      "Vector fields in physics",
+      "Fluid dynamics",
+      "Electromagnetic theory"
+    ],
+    "misconceptions": [
+      "Critical points in multivariable functions require testing beyond derivatives being zero",
+      "Mixed partial derivatives are not always equal (requires continuous second derivatives)",
+      "Order of integration can affect difficulty but not the result in multiple integrals",
+      "Conservative vector fields have specific properties not shared by all fields"
+    ]
+  },
+  {
+    "id": "linear_algebra_vectors",
+    "name": "Vectors and Vector Spaces",
+    "description": "Mathematical objects with magnitude and direction, and the spaces they occupy. Vectors are the foundation of linear algebra and are used to represent physical quantities, data points, and abstract mathematical concepts.",
+    "category": "math",
+    "subcategory": "linear_algebra",
+    "level": "beginner",
+    "order_num": 5,
+    "key_formulas": [
+      "Vector addition: u + v = (u₁+v₁, u₂+v₂, ...)",
+      "Scalar multiplication: c·v = (c·v₁, c·v₂, ...)",
+      "Dot product: u·v = u₁v₁ + u₂v₂ + ... + uₙvₙ",
+      "Cross product (3D): u×v = (u₂v₃-u₃v₂, u₃v₁-u₁v₃, u₁v₂-u₂v₁)",
+      "Vector magnitude: |v| = √(v₁² + v₂² + ... + vₙ²)",
+      "Unit vector: û = v/|v|"
+    ],
+    "applications": [
+      "Physics (force, velocity, acceleration)",
+      "Computer graphics (position, direction)",
+      "Machine learning (feature vectors)",
+      "Statistics (data representation)",
+      "Economics (multi-factor models)"
+    ],
+    "misconceptions": [
+      "Vectors are not just lists of numbers but elements of a vector space",
+      "The dot product is not a vector but a scalar",
+      "The cross product is only defined in 3D and 7D spaces",
+      "Not all vector operations are commutative"
+    ]
+  },
+  {
+    "id": "linear_algebra_matrices",
+    "name": "Matrices and Matrix Operations",
+    "description": "Rectangular arrays of numbers or symbols arranged in rows and columns, used to represent linear transformations, solve systems of equations, and organize data in a structured format.",
+    "category": "math",
+    "subcategory": "linear_algebra",
+    "level": "beginner",
+    "order_num": 6,
+    "key_formulas": [
+      "Matrix addition: (A + B)ᵢⱼ = Aᵢⱼ + Bᵢⱼ",
+      "Scalar multiplication: (cA)ᵢⱼ = c·Aᵢⱼ",
+      "Matrix multiplication: (AB)ᵢⱼ = ∑ₖ Aᵢₖ·Bₖⱼ",
+      "Transpose: (Aᵀ)ᵢⱼ = Aⱼᵢ",
+      "Determinant: det(A) or |A|",
+      "Inverse: A·A⁻¹ = A⁻¹·A = I",
+      "Trace: tr(A) = ∑ᵢ Aᵢᵢ"
+    ],
+    "applications": [
+      "Solving systems of linear equations",
+      "Linear transformations (rotation, scaling, reflection)",
+      "Computer graphics transformations",
+      "Data transformation in machine learning",
+      "Network analysis",
+      "Structural analysis in engineering"
+    ],
+    "misconceptions": [
+      "Matrix multiplication is not commutative (AB ≠ BA in general)",
+      "Not all matrices have inverses (singular matrices)",
+      "Matrix operations have specific dimension requirements",
+      "The determinant being zero has important implications"
+    ]
+  },
+  {
+    "id": "linear_algebra_eigen",
+    "name": "Eigenvalues and Eigenvectors",
+    "description": "Special scalars and vectors associated with a square matrix that remain in the same direction or reverse direction when that linear transformation is applied. These are fundamental concepts for understanding how matrices act on vector spaces.",
+    "category": "math",
+    "subcategory": "linear_algebra",
+    "level": "intermediate",
+    "order_num": 7,
+    "key_formulas": [
+      "Eigenvalue equation: Av = λv",
+      "Characteristic polynomial: det(A - λI) = 0",
+      "Eigendecomposition: A = PDP⁻¹ (when A has n linearly independent eigenvectors)",
+      "Spectral theorem (for symmetric matrices): A = QΛQᵀ",
+      "Diagonalization condition: A is diagonalizable if and only if it has n linearly independent eigenvectors"
+    ],
+    "applications": [
+      "Principal Component Analysis (PCA)",
+      "Differential equations",
+      "Quantum mechanics",
+      "Stability analysis",
+      "Google's PageRank algorithm",
+      "Vibration analysis in engineering"
+    ],
+    "misconceptions": [
+      "Not all matrices have real eigenvalues (need to consider complex ones)",
+      "Not all matrices are diagonalizable",
+      "Eigenvectors corresponding to different eigenvalues are linearly independent",
+      "The number of linearly independent eigenvectors for an eigenvalue may be less than its multiplicity"
+    ]
+  },
+  {
+    "id": "linear_algebra_applications",
+    "name": "Linear Algebra Applications",
+    "description": "The practical use of linear algebra concepts in various fields, including data science, computer science, engineering, physics, and economics. This covers how theoretical concepts translate to real-world problem-solving.",
+    "category": "math",
+    "subcategory": "linear_algebra",
+    "level": "advanced",
+    "order_num": 8,
+    "key_formulas": [
+      "Least squares solution: x = (AᵀA)⁻¹Aᵀb",
+      "Singular Value Decomposition: A = UΣVᵀ",
+      "Linear transformation: T(v) = Av",
+      "Change of basis: [v]ᵦ = P⁻¹[v]ₐ",
+      "Linear regression: y = Xβ + ε"
+    ],
+    "applications": [
+      "Machine learning (linear regression, dimensionality reduction)",
+      "Computer vision (image processing, facial recognition)",
+      "Quantum computing",
+      "Cryptography",
+      "Economics (input-output models)",
+      "Structural engineering",
+      "Circuit analysis"
+    ],
+    "misconceptions": [
+      "Linear algebra is not just for abstract mathematics but has numerous practical applications",
+      "Many real-world processes are approximated as linear when they are actually nonlinear",
+      "The choice of basis can significantly affect the complexity of problem-solving",
+      "Many machine learning algorithms are fundamentally linear algebra operations"
+    ]
+  },
+  {
+    "id": "statistics_descriptive",
+    "name": "Descriptive Statistics",
+    "description": "Methods for summarizing and describing the main features of a dataset, without making inferences or predictions. This includes measures of central tendency, dispersion, and data visualization techniques.",
+    "category": "math",
+    "subcategory": "statistics",
+    "level": "beginner",
+    "order_num": 9,
+    "key_formulas": [
+      "Mean (arithmetic): μ = (∑x) / n",
+      "Median: middle value when data is ordered",
+      "Mode: most frequent value",
+      "Range: maximum - minimum",
+      "Variance: σ² = ∑(x - μ)² / n",
+      "Standard deviation: σ = √(σ²)",
+      "Percentiles: value below which P% of observations fall"
+    ],
+    "applications": [
+      "Data summary in research",
+      "Business intelligence dashboards",
+      "Quality control in manufacturing",
+      "Healthcare metrics",
+      "Educational assessment",
+      "Economic indicators"
+    ],
+    "misconceptions": [
+      "Mean, median, and mode can be very different in skewed distributions",
+      "Standard deviation is not a complete description of data spread",
+      "Descriptive statistics can be misleading without proper visualization",
+      "Sample statistics are not the same as population parameters"
+    ]
+  },
+  {
+    "id": "statistics_probability",
+    "name": "Probability and Distributions",
+    "description": "The study of randomness and uncertainty, focusing on the likelihood of events and the mathematical distributions that model random phenomena. This forms the foundation for statistical inference and prediction.",
+    "category": "math",
+    "subcategory": "statistics",
+    "level": "intermediate",
+    "order_num": 10,
+    "key_formulas": [
+      "Probability: P(A) = Number of favorable outcomes / Total number of possible outcomes",
+      "Conditional probability: P(A|B) = P(A ∩ B) / P(B)",
+      "Bayes' theorem: P(A|B) = P(B|A)·P(A) / P(B)",
+      "Expected value: E[X] = ∑x·P(X=x)",
+      "Variance: Var(X) = E[(X - E[X])²]",
+      "Normal distribution PDF: f(x) = (1/(σ√2π))·e^(-(x-μ)²/(2σ²))",
+      "Binomial PMF: P(X=k) = (n choose k)·p^k·(1-p)^(n-k)"
+    ],
+    "applications": [
+      "Risk assessment in finance and insurance",
+      "Quality control in manufacturing",
+      "Reliability engineering",
+      "Machine learning prediction models",
+      "Experimental design",
+      "Epidemiology and public health"
+    ],
+    "misconceptions": [
+      "Correlation does not imply causation",
+      "The gambler's fallacy (past outcomes affecting future probability)",
+      "Confusing independence and mutual exclusivity",
+      "Assuming all distributions are normal",
+      "Misunderstanding conditional probability"
+    ]
+  },
+  {
+    "id": "statistics_inferential",
+    "name": "Inferential Statistics",
+    "description": "Methods for making inferences, predictions, and generalizations about a population based on a sample. This includes hypothesis testing, confidence intervals, and regression analysis.",
+    "category": "math",
+    "subcategory": "statistics",
+    "level": "advanced",
+    "order_num": 11,
+    "key_formulas": [
+      "Standard error of the mean: SE = σ/√n",
+      "Confidence interval: x̄ ± z·(σ/√n)",
+      "t-statistic: t = (x̄ - μ) / (s/√n)",
+      "p-value: probability of obtaining results at least as extreme as the observed results",
+      "Regression equation: y = β₀ + β₁x + ε",
+      "R-squared: proportion of variance explained by the model",
+      "ANOVA: F = (SSB/dfB) / (SSW/dfW)"
+    ],
+    "applications": [
+      "Scientific research validation",
+      "A/B testing in marketing",
+      "Medical treatment efficacy testing",
+      "Economic forecasting",
+      "Quality assurance",
+      "Machine learning model evaluation"
+    ],
+    "misconceptions": [
+      "Statistical significance doesn't necessarily imply practical significance",
+      "Confidence intervals don't show the probability of containing the parameter",
+      "p-values don't measure the probability that the null hypothesis is true",
+      "Multiple testing increases the chance of false positives",
+      "Sample size affects both precision and power of tests"
+    ]
+  },
+  {
+    "id": "statistics_data_analysis",
+    "name": "Applied Data Analysis",
+    "description": "Practical application of statistical methods to real-world data, including data cleaning, exploratory analysis, modeling, and interpretation. This bridges pure statistics with domain-specific insights.",
+    "category": "math",
+    "subcategory": "statistics",
+    "level": "advanced",
+    "order_num": 12,
+    "key_formulas": [
+      "Linear regression: y = Xβ + ε",
+      "Logistic regression: ln(p/(1-p)) = β₀ + β₁x",
+      "Pearson correlation: r = cov(X,Y) / (σₓσᵧ)",
+      "Chi-square test: χ² = ∑(O - E)²/E",
+      "Principal components: eigenvalues and eigenvectors of the covariance matrix",
+      "Cross-validation error: average error across k test subsets"
+    ],
+    "applications": [
+      "Business intelligence and analytics",
+      "Public policy evaluation",
+      "Healthcare data analysis",
+      "Environmental monitoring",
+      "Social science research",
+      "Financial analysis",
+      "Sports analytics"
+    ],
+    "misconceptions": [
+      "Big data doesn't eliminate the need for careful statistical analysis",
+      "Model complexity doesn't always improve predictive performance",
+      "Domain knowledge is crucial for proper interpretation",
+      "Observational data has limitations for causal inference",
+      "Statistical software output requires proper understanding for interpretation"
+    ]
+  }
+]
