@@ -5,7 +5,7 @@ Algo Ustadh is a comprehensive educational platform designed to help new develop
 
 > *"Ustadh" (أستاذ) means "Professor" in Arabic. Algo Ustadh is your AI-powered professor for algorithms, system design, and mathematics.*
 
-## 🚀 Features
+## Features
 
 - **Interactive Learning**: Understand concepts with clear explanations, visualizations, and examples
 - **Step-by-Step Problem Solving**: Learn how to approach and solve problems with guided assistance
@@ -16,27 +16,27 @@ Algo Ustadh is a comprehensive educational platform designed to help new develop
 - **Progress Tracking**: Monitor your learning journey across different topics
 - **AI-Powered Assistance**: Get help from intelligent tutors that adapt to your learning style
 
-## 🧠 Supported Learning Areas
+## Supported Learning Areas
 
 Algo Ustadh covers three core computer science areas:
 
-### 📊 Data Structures & Algorithms
+### Data Structures & Algorithms
 - **Beginner**: Arrays, Linked Lists, Stacks, Queues
 - **Intermediate**: Hash Tables, Trees, Heaps, Sorting, Searching
 - **Advanced**: Graphs, Dynamic Programming, Greedy Algorithms
 
-### 🏗️ System Design
+### System Design
 - **Fundamentals**: System Design Basics, Scalability, Load Balancing, Caching
 - **Database**: Database Design, Sharding, Replication, NoSQL vs SQL
 - **Architecture**: Microservices, API Design, Distributed Systems
 - **Security**: Authentication, Authorization, Data Protection
 
-### 🧮 Mathematics
+### Mathematics
 - **Calculus**: Limits, Derivatives, Integrals, Multivariate Calculus
 - **Linear Algebra**: Vectors, Matrices, Eigenvalues, Linear Transformations
 - **Statistics**: Descriptive Statistics, Probability, Inferential Statistics, Data Analysis
 
-## 💻 Tech Stack
+## Tech Stack
 
 Algo Ustadh is built with free and open-source technologies:
 
@@ -46,7 +46,7 @@ Algo Ustadh is built with free and open-source technologies:
 - **Data Visualization**: Matplotlib, Plotly, and NumPy for interactive visuals
 - **Code Execution**: Secure Python sandbox for code evaluation
 
-## 🏁 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -94,7 +94,7 @@ Algo Ustadh is built with free and open-source technologies:
    http://localhost:8501
    ```
 
-## 📚 Usage Guide
+## Usage Guide
 
 1. **Select a Category**: Choose between DSA, System Design, or Mathematics
 2. **Select a Topic**: Pick a specific topic to learn from the sidebar
@@ -105,7 +105,7 @@ Algo Ustadh is built with free and open-source technologies:
 7. **Explore Interactive Tools**: Use interactive visualizations to deepen understanding
 8. **Track Progress**: Monitor which topics you've mastered
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions from the community! If you'd like to add a new feature, fix a bug, or improve documentation:
 
