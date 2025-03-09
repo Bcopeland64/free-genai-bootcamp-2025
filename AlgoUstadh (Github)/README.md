@@ -120,10 +120,5 @@ We welcome contributions from the community! If you'd like to add a new feature,
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgements
 
-- Thanks to the open-source community for providing the tools and libraries that make Algo Ustadh possible
-- Special thanks to contributors who have helped improve this educational platform
-=======
-<h1 style="color:blue;">ExamPro GenAI Bootcamp - Brandon Copeland</h1>
 
