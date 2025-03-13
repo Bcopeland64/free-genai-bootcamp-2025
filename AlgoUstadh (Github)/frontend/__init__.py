@@ -1,1 +1,0 @@
-# AlgoMentor Frontend Package
