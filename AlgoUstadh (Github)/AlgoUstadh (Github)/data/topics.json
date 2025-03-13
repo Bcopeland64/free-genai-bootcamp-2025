@@ -1,0 +1,17 @@
+[
+  {
+    "id": "dsa",
+    "name": "Data Structures & Algorithms",
+    "description": "Learn essential data structures and algorithms for technical interviews and efficient programming."
+  },
+  {
+    "id": "system_design",
+    "name": "System Design",
+    "description": "Master design principles for large-scale systems, including scalability, reliability, and performance."
+  },
+  {
+    "id": "math",
+    "name": "Mathematics",
+    "description": "Study key mathematical concepts including calculus, linear algebra, and statistics for technical applications."
+  }
+]

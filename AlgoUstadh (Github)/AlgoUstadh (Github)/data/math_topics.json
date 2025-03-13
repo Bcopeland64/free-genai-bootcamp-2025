@@ -1,0 +1,750 @@
+[
+  {
+    "id": "calculus_limits",
+    "name": "Limits",
+    "level": "beginner",
+    "subcategory": "calculus",
+    "description": "Limits describe the behavior of a function as its input approaches a particular value.",
+    "key_formulas": [
+      "Definition: lim(x→a) f(x) = L means that for every ε > 0, there exists δ > 0 such that |f(x) - L| < ε whenever 0 < |x - a| < δ",
+      "lim(x→a) k = k (Constants)",
+      "lim(x→a) x = a (Identity)",
+      "lim(x→a) [f(x) + g(x)] = lim(x→a) f(x) + lim(x→a) g(x) (Sum Rule)",
+      "lim(x→a) [f(x) × g(x)] = lim(x→a) f(x) × lim(x→a) g(x) (Product Rule)"
+    ],
+    "applications": [
+      "Calculating derivatives",
+      "Finding asymptotes",
+      "Evaluating indeterminate forms",
+      "Analyzing function behavior"
+    ],
+    "common_techniques": [
+      "Direct substitution",
+      "Factoring and simplifying",
+      "Rationalization",
+      "L'Hôpital's rule for indeterminate forms"
+    ],
+    "order_num": 1
+  },
+  {
+    "id": "calculus_derivatives",
+    "name": "Derivatives",
+    "level": "beginner",
+    "subcategory": "calculus",
+    "description": "Derivatives measure the rate of change of a function with respect to one of its variables.",
+    "key_formulas": [
+      "Definition: f'(x) = lim(h→0) [f(x+h) - f(x)]/h",
+      "Power Rule: d/dx [x^n] = n×x^(n-1)",
+      "Product Rule: d/dx [f(x)×g(x)] = f'(x)×g(x) + f(x)×g'(x)",
+      "Chain Rule: d/dx [f(g(x))] = f'(g(x))×g'(x)",
+      "Quotient Rule: d/dx [f(x)/g(x)] = [f'(x)×g(x) - f(x)×g'(x)]/[g(x)]^2"
+    ],
+    "applications": [
+      "Rate of change problems",
+      "Optimization (finding maxima and minima)",
+      "Related rates",
+      "Curve sketching",
+      "Motion analysis (velocity and acceleration)"
+    ],
+    "order_num": 2
+  },
+  {
+    "id": "calculus_integrals",
+    "name": "Integrals",
+    "level": "intermediate",
+    "subcategory": "calculus",
+    "description": "Integrals represent the accumulation of quantities and are the inverse operation of differentiation.",
+    "key_formulas": [
+      "Indefinite integral: ∫f(x)dx = F(x) + C, where F'(x) = f(x)",
+      "Definite integral: ∫[a,b]f(x)dx = F(b) - F(a), where F'(x) = f(x)",
+      "Fundamental Theorem of Calculus: d/dx[∫[a,x]f(t)dt] = f(x)",
+      "Integration by parts: ∫u(x)v'(x)dx = u(x)v(x) - ∫v(x)u'(x)dx",
+      "Integration by substitution: ∫f(g(x))g'(x)dx = ∫f(u)du, where u = g(x)"
+    ],
+    "applications": [
+      "Area calculations",
+      "Volume calculations",
+      "Work and energy in physics",
+      "Probability distributions",
+      "Solving differential equations"
+    ],
+    "integration_techniques": [
+      "Substitution (u-substitution)",
+      "Integration by parts",
+      "Partial fractions",
+      "Trigonometric substitutions",
+      "Numerical integration (trapezoidal rule, Simpson's rule)"
+    ],
+    "order_num": 3
+  },
+  {
+    "id": "calculus_series",
+    "name": "Infinite Series",
+    "level": "advanced",
+    "subcategory": "calculus",
+    "description": "Infinite series are the sum of infinitely many terms that follow a specific pattern.",
+    "key_concepts": [
+      "Sequence: an ordered list of numbers a₁, a₂, a₃, ...",
+      "Series: the sum of a sequence, S = a₁ + a₂ + a₃ + ...",
+      "Convergence: when the sum approaches a fixed value",
+      "Divergence: when the sum does not approach a fixed value"
+    ],
+    "convergence_tests": [
+      "Geometric series: ∑r^n converges to 1/(1-r) when |r| < 1",
+      "p-series: ∑(1/n^p) converges when p > 1",
+      "Comparison test",
+      "Ratio test",
+      "Integral test",
+      "Alternating series test"
+    ],
+    "special_series": [
+      "Taylor series: f(x) = f(a) + f'(a)(x-a)/1! + f''(a)(x-a)²/2! + ...",
+      "Maclaurin series (Taylor series at a=0)",
+      "Fourier series: representing periodic functions using sine and cosine"
+    ],
+    "applications": [
+      "Function approximation",
+      "Solving differential equations",
+      "Physics (wave phenomena)",
+      "Signal processing",
+      "Error estimation"
+    ],
+    "order_num": 4
+  },
+  {
+    "id": "linear_algebra_vectors",
+    "name": "Vectors",
+    "level": "beginner",
+    "subcategory": "linear_algebra",
+    "description": "Vectors are mathematical objects that have both magnitude and direction, fundamental to linear algebra.",
+    "key_formulas": [
+      "Vector addition: v + w = (v₁+w₁, v₂+w₂, ..., vₙ+wₙ)",
+      "Scalar multiplication: c·v = (c·v₁, c·v₂, ..., c·vₙ)",
+      "Dot product: v·w = v₁w₁ + v₂w₂ + ... + vₙwₙ",
+      "Magnitude: |v| = √(v₁² + v₂² + ... + vₙ²)",
+      "Cross product (3D): v×w = (v₂w₃-v₃w₂, v₃w₁-v₁w₃, v₁w₂-v₂w₁)"
+    ],
+    "properties": [
+      "Dot product is commutative: v·w = w·v",
+      "Dot product with orthogonal vectors equals zero",
+      "Cross product is anticommutative: v×w = -(w×v)",
+      "Cross product of parallel vectors equals zero"
+    ],
+    "applications": [
+      "Physics (force, velocity, acceleration)",
+      "Computer graphics",
+      "Machine learning (feature vectors)",
+      "Robotics (orientation and movement)",
+      "Quantum mechanics"
+    ],
+    "order_num": 5
+  },
+  {
+    "id": "linear_algebra_matrices",
+    "name": "Matrices",
+    "level": "intermediate",
+    "subcategory": "linear_algebra",
+    "description": "Matrices are rectangular arrays of numbers, symbols, or expressions arranged in rows and columns.",
+    "key_operations": [
+      "Addition: (A + B)ᵢⱼ = Aᵢⱼ + Bᵢⱼ",
+      "Scalar multiplication: (cA)ᵢⱼ = c × Aᵢⱼ",
+      "Matrix multiplication: (AB)ᵢⱼ = ∑ Aᵢₖ × Bₖⱼ",
+      "Transpose: (Aᵀ)ᵢⱼ = Aⱼᵢ",
+      "Determinant: measure of scaling factor of linear transformation"
+    ],
+    "matrix_types": [
+      "Identity matrix: I",
+      "Zero matrix: 0",
+      "Diagonal matrix: non-zero elements only on diagonal",
+      "Symmetric matrix: A = Aᵀ",
+      "Orthogonal matrix: A⁻¹ = Aᵀ",
+      "Singular matrix: det(A) = 0"
+    ],
+    "applications": [
+      "Linear transformations",
+      "Solving systems of linear equations",
+      "Computer graphics (translations, rotations, scaling)",
+      "Markov chains",
+      "Graph representation",
+      "Machine learning algorithms"
+    ],
+    "order_num": 6
+  },
+  {
+    "id": "linear_algebra_eigen",
+    "name": "Eigenvalues and Eigenvectors",
+    "level": "advanced",
+    "subcategory": "linear_algebra",
+    "description": "Eigenvalues and eigenvectors are values and vectors that remain in the same direction when a linear transformation is applied.",
+    "key_concepts": [
+      "Eigenvector equation: Av = λv",
+      "Eigenvalue: λ in the equation Av = λv",
+      "Characteristic polynomial: det(A - λI) = 0",
+      "Eigenspace: the set of all eigenvectors with a given eigenvalue",
+      "Diagonalization: A = PDP⁻¹ where D is diagonal and P contains eigenvectors"
+    ],
+    "properties": [
+      "The sum of eigenvalues equals the trace of the matrix",
+      "The product of eigenvalues equals the determinant",
+      "Symmetric matrices have real eigenvalues",
+      "Similar matrices have the same eigenvalues"
+    ],
+    "applications": [
+      "Principal Component Analysis (PCA)",
+      "Quantum mechanics",
+      "Stability analysis in differential equations",
+      "Google's PageRank algorithm",
+      "Vibration analysis in engineering"
+    ],
+    "order_num": 7
+  },
+  {
+    "id": "statistics_descriptive",
+    "name": "Descriptive Statistics",
+    "level": "beginner",
+    "subcategory": "statistics",
+    "description": "Descriptive statistics summarize and describe the main features of a collection of data.",
+    "key_formulas": [
+      "Mean: μ = (∑x)/n",
+      "Median: middle value of ordered data set",
+      "Mode: most frequent value in data set",
+      "Range: max value - min value",
+      "Variance: σ² = ∑(x-μ)²/n",
+      "Standard Deviation: σ = √(σ²)"
+    ],
+    "measures_of_central_tendency": [
+      "Arithmetic mean",
+      "Geometric mean",
+      "Harmonic mean",
+      "Median",
+      "Mode"
+    ],
+    "measures_of_dispersion": [
+      "Range",
+      "Interquartile range (IQR)",
+      "Variance",
+      "Standard deviation",
+      "Coefficient of variation"
+    ],
+    "data_visualization": [
+      "Histograms",
+      "Box plots",
+      "Scatter plots",
+      "Bar charts",
+      "Pie charts"
+    ],
+    "order_num": 8
+  },
+  {
+    "id": "statistics_probability",
+    "name": "Probability Theory",
+    "level": "intermediate",
+    "subcategory": "statistics",
+    "description": "Probability theory is the branch of mathematics concerned with probability, the analysis of random phenomena.",
+    "key_concepts": [
+      "Sample space: the set of all possible outcomes",
+      "Event: a subset of the sample space",
+      "Probability function: P(A) maps events to values between 0 and 1",
+      "Conditional probability: P(A|B) = P(A∩B)/P(B)",
+      "Independence: P(A∩B) = P(A)×P(B)"
+    ],
+    "probability_rules": [
+      "Addition rule: P(A∪B) = P(A) + P(B) - P(A∩B)",
+      "Multiplication rule: P(A∩B) = P(A)×P(B|A)",
+      "Complement rule: P(A') = 1 - P(A)",
+      "Bayes' theorem: P(A|B) = P(B|A)×P(A)/P(B)"
+    ],
+    "distributions": [
+      "Discrete: Bernoulli, Binomial, Poisson, Geometric",
+      "Continuous: Uniform, Normal, Exponential, Chi-square"
+    ],
+    "applications": [
+      "Risk assessment",
+      "Quality control",
+      "Machine learning",
+      "Genetics",
+      "Financial analysis"
+    ],
+    "order_num": 9
+  },
+  {
+    "id": "statistics_inference",
+    "name": "Statistical Inference",
+    "level": "advanced",
+    "subcategory": "statistics",
+    "description": "Statistical inference is the process of using data to make conclusions about a population parameter.",
+    "key_concepts": [
+      "Population: the entire group being studied",
+      "Sample: a subset of the population",
+      "Parameter: numerical characteristic of a population",
+      "Statistic: numerical characteristic of a sample",
+      "Sampling distribution: distribution of a statistic"
+    ],
+    "estimation_methods": [
+      "Point estimation",
+      "Interval estimation (confidence intervals)",
+      "Maximum likelihood estimation",
+      "Bayesian estimation"
+    ],
+    "hypothesis_testing": [
+      "Null hypothesis (H₀) and alternative hypothesis (H₁)",
+      "Type I error (rejecting a true H₀)",
+      "Type II error (failing to reject a false H₀)",
+      "p-value: probability of obtaining results as extreme as observed",
+      "Common tests: t-test, z-test, chi-square test, ANOVA, F-test"
+    ],
+    "applications": [
+      "Scientific research",
+      "Medical trials",
+      "Quality assurance",
+      "Market research",
+      "Economic forecasting"
+    ],
+    "order_num": 10
+  },
+  {
+    "id": "discrete_math_logic",
+    "name": "Logic and Proofs",
+    "level": "beginner",
+    "subcategory": "discrete_mathematics",
+    "description": "Mathematical logic focuses on formal reasoning and the structure of mathematical proofs.",
+    "key_concepts": [
+      "Proposition: statement that is either true or false",
+      "Logical operators: AND (∧), OR (∨), NOT (¬), IMPLIES (→), IFF (↔)",
+      "Truth tables: method for determining truth values of complex propositions",
+      "Predicate logic: extends propositional logic with quantifiers",
+      "Validity: an argument is valid if the conclusion follows from the premises"
+    ],
+    "proof_techniques": [
+      "Direct proof",
+      "Proof by contradiction",
+      "Proof by contrapositive",
+      "Mathematical induction",
+      "Proof by cases"
+    ],
+    "applications": [
+      "Computer program verification",
+      "Circuit design",
+      "Artificial intelligence",
+      "Database query languages",
+      "Formal specification of systems"
+    ],
+    "order_num": 11
+  },
+  {
+    "id": "discrete_math_sets",
+    "name": "Set Theory",
+    "level": "beginner",
+    "subcategory": "discrete_mathematics",
+    "description": "Set theory is the branch of mathematics that studies sets, which are collections of objects.",
+    "key_concepts": [
+      "Set: a collection of distinct objects",
+      "Element: an object in a set",
+      "Subset: A is a subset of B if every element of A is in B",
+      "Power set: set of all subsets of a given set",
+      "Cardinality: the number of elements in a set"
+    ],
+    "set_operations": [
+      "Union: A ∪ B = {x | x ∈ A or x ∈ B}",
+      "Intersection: A ∩ B = {x | x ∈ A and x ∈ B}",
+      "Difference: A - B = {x | x ∈ A and x ∉ B}",
+      "Complement: A' = {x | x ∉ A}",
+      "Cartesian product: A × B = {(a,b) | a ∈ A, b ∈ B}"
+    ],
+    "properties": [
+      "Commutative laws: A ∪ B = B ∪ A, A ∩ B = B ∩ A",
+      "Associative laws: (A ∪ B) ∪ C = A ∪ (B ∪ C)",
+      "Distributive laws: A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)",
+      "De Morgan's laws: (A ∪ B)' = A' ∩ B', (A ∩ B)' = A' ∪ B'"
+    ],
+    "applications": [
+      "Database operations",
+      "Logic design",
+      "Venn diagrams",
+      "Programming (collections and arrays)",
+      "Probability theory"
+    ],
+    "order_num": 12
+  },
+  {
+    "id": "discrete_math_combinatorics",
+    "name": "Combinatorics",
+    "level": "intermediate",
+    "subcategory": "discrete_mathematics",
+    "description": "Combinatorics is the study of counting, arrangement, and combination of objects.",
+    "key_formulas": [
+      "Permutation (ordered arrangement): P(n,r) = n!/(n-r)!",
+      "Combination (unordered selection): C(n,r) = n!/[r!(n-r)!]",
+      "Permutation with repetition: n^r",
+      "Combination with repetition: C(n+r-1,r)",
+      "Binomial theorem: (x+y)^n = ∑(k=0 to n) C(n,k) x^(n-k) y^k"
+    ],
+    "counting_principles": [
+      "Addition principle: |A ∪ B| = |A| + |B| - |A ∩ B|",
+      "Multiplication principle: If task 1 has m ways and task 2 has n ways, then doing both has m×n ways",
+      "Inclusion-exclusion principle",
+      "Pigeonhole principle: if n+1 objects are placed in n boxes, at least one box has multiple objects"
+    ],
+    "applications": [
+      "Probability calculations",
+      "Algorithm analysis",
+      "Coding theory",
+      "Operations research",
+      "Game theory"
+    ],
+    "order_num": 13
+  },
+  {
+    "id": "discrete_math_graph_theory",
+    "name": "Graph Theory",
+    "level": "intermediate",
+    "subcategory": "discrete_mathematics",
+    "description": "Graph theory is the study of graphs, which are mathematical structures used to model pairwise relations between objects.",
+    "key_concepts": [
+      "Graph: a set of vertices connected by edges",
+      "Vertex (node): a fundamental unit of which graphs are formed",
+      "Edge: a connection between two vertices",
+      "Path: a sequence of edges connecting vertices",
+      "Cycle: a path that starts and ends at the same vertex"
+    ],
+    "graph_types": [
+      "Undirected graph: edges have no direction",
+      "Directed graph (digraph): edges have direction",
+      "Weighted graph: edges have weights or costs",
+      "Bipartite graph: vertices can be divided into two disjoint sets",
+      "Complete graph: every vertex is connected to every other vertex"
+    ],
+    "algorithms": [
+      "Breadth-first search (BFS)",
+      "Depth-first search (DFS)",
+      "Dijkstra's algorithm (shortest path)",
+      "Kruskal's algorithm (minimum spanning tree)",
+      "Topological sorting"
+    ],
+    "applications": [
+      "Network analysis",
+      "Social networks",
+      "Route optimization",
+      "Scheduling problems",
+      "Circuit design"
+    ],
+    "order_num": 14
+  },
+  {
+    "id": "number_theory",
+    "name": "Number Theory",
+    "level": "intermediate",
+    "subcategory": "pure_mathematics",
+    "description": "Number theory is the study of integers and their properties, particularly focused on prime numbers and divisibility.",
+    "key_concepts": [
+      "Divisibility: a divides b if b = ak for some integer k",
+      "Prime number: an integer > 1 whose only divisors are 1 and itself",
+      "Greatest common divisor (GCD): largest positive integer that divides two numbers",
+      "Least common multiple (LCM): smallest positive integer that is divisible by two numbers",
+      "Modular arithmetic: arithmetic for integers where numbers wrap around after reaching a fixed value"
+    ],
+    "theorems": [
+      "Fundamental Theorem of Arithmetic: every integer > 1 is either prime or can be uniquely expressed as a product of primes",
+      "Euclidean algorithm: efficient method for computing GCD",
+      "Fermat's Little Theorem: if p is prime and a is not divisible by p, then a^(p-1) ≡ 1 (mod p)",
+      "Chinese Remainder Theorem: solves systems of linear congruences",
+      "Euler's Theorem: generalizes Fermat's Little Theorem"
+    ],
+    "applications": [
+      "Cryptography (RSA encryption)",
+      "Hash functions",
+      "Random number generation",
+      "Error-correcting codes",
+      "Calendar calculations"
+    ],
+    "order_num": 15
+  },
+  {
+    "id": "optimization",
+    "name": "Optimization Theory",
+    "level": "advanced",
+    "subcategory": "applied_mathematics",
+    "description": "Optimization theory is the study of finding the best solution from all feasible solutions.",
+    "key_concepts": [
+      "Objective function: the function to be maximized or minimized",
+      "Constraints: conditions that limit the possible solutions",
+      "Feasible region: the set of all possible solutions that satisfy the constraints",
+      "Optimal solution: the solution that provides the best value of the objective function",
+      "Global vs. local optima: best solution overall vs. best in a neighborhood"
+    ],
+    "optimization_types": [
+      "Linear programming: optimizing a linear objective function with linear constraints",
+      "Nonlinear programming: involves nonlinear objective function or constraints",
+      "Integer programming: variables must take integer values",
+      "Dynamic programming: breaking problems into simpler subproblems",
+      "Convex optimization: special case with convex objective function and constraints"
+    ],
+    "algorithms": [
+      "Simplex method for linear programming",
+      "Gradient descent",
+      "Newton's method",
+      "Interior point methods",
+      "Genetic algorithms and evolutionary computation"
+    ],
+    "applications": [
+      "Resource allocation",
+      "Portfolio optimization",
+      "Machine learning (training neural networks)",
+      "Transportation and logistics",
+      "Production planning"
+    ],
+    "order_num": 16
+  },
+  {
+    "id": "calculus_multivariable",
+    "name": "Multivariable Calculus",
+    "level": "intermediate",
+    "subcategory": "calculus",
+    "description": "The extension of calculus to functions of multiple variables, dealing with partial derivatives, multiple integrals, and vector calculus.",
+    "key_concepts": [
+      "Partial derivatives: derivatives with respect to one variable while holding others constant",
+      "Gradient: vector of partial derivatives, pointing in direction of steepest increase",
+      "Multiple integrals: integration over regions in multiple dimensions",
+      "Line integrals: integration along a curve in space",
+      "Surface integrals: integration over a surface"
+    ],
+    "theorems": [
+      "Green's Theorem: relates line integral around simple closed curve to double integral over region inside",
+      "Stokes' Theorem: relates surface integral of curl to line integral around boundary",
+      "Divergence Theorem: relates surface integral of flux to volume integral of divergence",
+      "Chain Rule for partial derivatives"
+    ],
+    "applications": [
+      "Physics (electromagnetism, fluid dynamics)",
+      "Economics (optimization of multivariate functions)",
+      "Machine learning (gradient descent algorithms)",
+      "Computer graphics (vector fields, parametric surfaces)"
+    ],
+    "order_num": 17
+  },
+  {
+    "id": "calculus_differential_equations",
+    "name": "Differential Equations",
+    "level": "intermediate",
+    "subcategory": "calculus",
+    "description": "Equations that relate functions with their derivatives, used to model systems that change over time or space.",
+    "key_concepts": [
+      "Ordinary Differential Equations (ODEs): involve derivatives with respect to one variable",
+      "Partial Differential Equations (PDEs): involve partial derivatives of multivariate functions",
+      "Initial conditions: values of the function at a specific point",
+      "Boundary conditions: constraints on the solution at the boundaries of the domain",
+      "General and particular solutions"
+    ],
+    "solving_methods": [
+      "Separation of variables",
+      "Integrating factors",
+      "Variation of parameters",
+      "Power series methods",
+      "Numerical methods (Euler's method, Runge-Kutta)"
+    ],
+    "applications": [
+      "Physics (mechanics, heat flow, wave motion)",
+      "Population dynamics",
+      "Electrical circuits",
+      "Chemical reactions",
+      "Finance (Black-Scholes equation)"
+    ],
+    "order_num": 18
+  },
+  {
+    "id": "linear_algebra_spaces",
+    "name": "Vector Spaces",
+    "level": "beginner",
+    "subcategory": "linear_algebra",
+    "description": "Abstract mathematical structures that generalize the properties of vectors in physical space, focusing on linear combinations and transformations.",
+    "key_concepts": [
+      "Linear independence: vectors where no vector can be written as a linear combination of others",
+      "Basis: minimal set of vectors that spans the entire space",
+      "Dimension: number of vectors in a basis",
+      "Subspace: subset of a vector space that is itself a vector space",
+      "Linear transformation: function between vector spaces preserving vector addition and scalar multiplication"
+    ],
+    "properties": [
+      "Closure under addition and scalar multiplication",
+      "Presence of zero vector",
+      "Uniqueness of additive inverses",
+      "Associative and commutative properties of addition",
+      "Distributive properties of scalar multiplication"
+    ],
+    "applications": [
+      "Computer graphics (3D transformations)",
+      "Quantum mechanics (state spaces)",
+      "Signal processing (Fourier analysis)",
+      "Data analysis (principal component analysis)",
+      "Cryptography (linear codes)"
+    ],
+    "order_num": 19
+  },
+  {
+    "id": "statistics_regression",
+    "name": "Regression Analysis",
+    "level": "intermediate",
+    "subcategory": "statistics",
+    "description": "Statistical methods for estimating relationships among variables, particularly how a dependent variable changes when independent variables are varied.",
+    "key_models": [
+      "Simple linear regression: one dependent and one independent variable",
+      "Multiple linear regression: one dependent and multiple independent variables",
+      "Polynomial regression: regression with polynomial terms",
+      "Logistic regression: for categorical dependent variables",
+      "Non-linear regression: general model where parameters appear non-linearly"
+    ],
+    "evaluation_metrics": [
+      "R-squared: proportion of variance explained by the model",
+      "Adjusted R-squared: accounts for number of predictors",
+      "Mean Squared Error (MSE): average squared difference between predictions and actual values",
+      "Root Mean Squared Error (RMSE): square root of MSE",
+      "p-values: statistical significance of coefficients"
+    ],
+    "assumptions": [
+      "Linearity: relationship is linear in parameters",
+      "Independence of errors",
+      "Homoscedasticity: constant variance of errors",
+      "Normality of error distribution",
+      "No multicollinearity among independent variables"
+    ],
+    "applications": [
+      "Predictive modeling",
+      "Time series forecasting",
+      "Quality control",
+      "Econometrics",
+      "Biostatistics"
+    ],
+    "order_num": 20
+  },
+  {
+    "id": "statistics_machine_learning",
+    "name": "Statistical Machine Learning",
+    "level": "advanced",
+    "subcategory": "statistics",
+    "description": "Methods that combine statistical techniques with machine learning algorithms to build predictive models from data.",
+    "algorithms": [
+      "Linear and logistic regression",
+      "Decision trees and random forests",
+      "Support vector machines",
+      "k-nearest neighbors",
+      "Neural networks"
+    ],
+    "concepts": [
+      "Supervised vs. unsupervised learning",
+      "Training, validation, and test sets",
+      "Overfitting and underfitting",
+      "Bias-variance tradeoff",
+      "Feature selection and engineering"
+    ],
+    "evaluation_techniques": [
+      "Cross-validation",
+      "Confusion matrix (precision, recall, F1-score)",
+      "ROC curve and AUC",
+      "Learning curves",
+      "Hyperparameter tuning"
+    ],
+    "applications": [
+      "Image and speech recognition",
+      "Natural language processing",
+      "Recommendation systems",
+      "Anomaly detection",
+      "Medical diagnosis"
+    ],
+    "order_num": 21
+  },
+  {
+    "id": "discrete_math_algorithms",
+    "name": "Algorithm Analysis",
+    "level": "intermediate",
+    "subcategory": "discrete_mathematics",
+    "description": "The branch of mathematics concerned with the rigorous study of algorithms' performance and computational complexity.",
+    "key_concepts": [
+      "Time complexity: how runtime grows with input size",
+      "Space complexity: how memory usage grows with input size",
+      "Big O notation: upper bound on growth rate",
+      "Best, worst, and average case analysis",
+      "Amortized analysis: analyzing sequence of operations"
+    ],
+    "complexity_classes": [
+      "O(1): Constant time",
+      "O(log n): Logarithmic time",
+      "O(n): Linear time",
+      "O(n log n): Linearithmic time",
+      "O(n²), O(n³): Polynomial time",
+      "O(2ⁿ), O(n!): Exponential and factorial time"
+    ],
+    "analysis_techniques": [
+      "Recurrence relations",
+      "Master theorem",
+      "Substitution method",
+      "Recursion tree method",
+      "Potential function method (for amortized analysis)"
+    ],
+    "applications": [
+      "Algorithm design and optimization",
+      "Performance prediction",
+      "Computational feasibility assessment",
+      "Resource allocation planning",
+      "Database query optimization"
+    ],
+    "order_num": 22
+  },
+  {
+    "id": "calculus_numerical_methods",
+    "name": "Numerical Methods",
+    "level": "advanced",
+    "subcategory": "calculus",
+    "description": "Techniques for approximating solutions to mathematical problems that cannot be solved exactly or efficiently by analytical methods.",
+    "key_methods": [
+      "Root finding: bisection method, Newton's method, secant method",
+      "Numerical integration: trapezoidal rule, Simpson's rule, Gaussian quadrature",
+      "Numerical differentiation: finite difference methods",
+      "Solving ODEs: Euler's method, Runge-Kutta methods",
+      "Solving PDEs: finite difference, finite element, finite volume methods"
+    ],
+    "concepts": [
+      "Discretization: converting continuous problems to discrete approximations",
+      "Convergence: whether a method approaches the exact solution as step size decreases",
+      "Stability: whether small errors remain bounded during computation",
+      "Consistency: whether discretization approaches the original equation as step size decreases",
+      "Error analysis: roundoff error, truncation error, total error estimation"
+    ],
+    "applications": [
+      "Scientific computing",
+      "Engineering simulations",
+      "Weather forecasting",
+      "Financial modeling",
+      "Computer graphics"
+    ],
+    "order_num": 23
+  },
+  {
+    "id": "linear_algebra_transforms",
+    "name": "Linear Transformations",
+    "level": "advanced",
+    "subcategory": "linear_algebra",
+    "description": "Functions between vector spaces that preserve vector addition and scalar multiplication, fundamental to understanding how geometric operations work.",
+    "key_concepts": [
+      "Kernel (null space): vectors that map to zero",
+      "Range (image): set of all possible outputs",
+      "Isomorphism: bijective linear transformation between vector spaces",
+      "Rank-nullity theorem: dim(kernel) + dim(range) = dim(domain)",
+      "Change of basis: representing the same transformation in different coordinate systems"
+    ],
+    "common_transformations": [
+      "Rotations: preserve angles and distances",
+      "Reflections: mirror images across a subspace",
+      "Projections: map vectors onto a subspace",
+      "Scaling: multiply vectors by constant factors",
+      "Shearing: transform rectangles into parallelograms"
+    ],
+    "applications": [
+      "Computer graphics (3D rendering)",
+      "Quantum mechanics (observables as operators)",
+      "Signal processing (Fourier transform, wavelets)",
+      "Machine learning (dimensionality reduction)",
+      "Control theory (state-space representations)"
+    ],
+    "order_num": 24
+  }
+]

@@ -1,0 +1,534 @@
+[
+  {
+    "id": "system_design_fundamentals",
+    "name": "System Design Fundamentals",
+    "level": "beginner",
+    "description": "Core concepts and principles that form the foundation of system design.",
+    "components": ["Requirements analysis", "Architectural patterns", "Performance considerations", "Scalability principles", "Reliability"],
+    "order_num": 1
+  },
+  {
+    "id": "scalability",
+    "name": "Scalability",
+    "level": "beginner",
+    "description": "Approaches to handle increasing loads and growing user bases.",
+    "components": ["Horizontal scaling", "Vertical scaling", "Load balancing", "Database sharding", "Caching strategies"],
+    "principles": [
+      "Design with scaling in mind from the beginning",
+      "Identify potential bottlenecks early",
+      "Break monolithic services into smaller services",
+      "Use stateless services when possible",
+      "Implement asynchronous processing"
+    ],
+    "case_studies": ["Netflix scalability", "Twitter's timeline architecture", "Instagram's feed generation"],
+    "order_num": 2
+  },
+  {
+    "id": "load_balancing",
+    "name": "Load Balancing",
+    "level": "beginner",
+    "description": "Techniques for distributing traffic across multiple servers or resources.",
+    "components": ["Round Robin", "Least Connections", "Resource-based", "Hardware vs Software load balancers", "DNS load balancing"],
+    "strategies": [
+      "Layer 4 (Transport) load balancing",
+      "Layer 7 (Application) load balancing",
+      "Global server load balancing",
+      "Sticky sessions",
+      "Health checks"
+    ],
+    "tools": ["NGINX", "HAProxy", "AWS ELB", "Google Cloud Load Balancing", "Kubernetes Ingress"],
+    "order_num": 3
+  },
+  {
+    "id": "caching",
+    "name": "Caching",
+    "level": "intermediate",
+    "description": "Storing frequently accessed data in a high-speed storage layer to reduce latency and load on backend systems.",
+    "types": ["In-memory caching", "CDN caching", "Database caching", "Application caching", "Browser caching"],
+    "strategies": [
+      "Cache-aside (Lazy loading)",
+      "Write-through",
+      "Write-behind (Write-back)",
+      "Refresh-ahead"
+    ],
+    "eviction_policies": ["LRU (Least Recently Used)", "LFU (Least Frequently Used)", "FIFO (First In First Out)", "TTL (Time To Live)"],
+    "tools": ["Redis", "Memcached", "Varnish", "Cloudflare", "Akamai"],
+    "challenges": ["Cache invalidation", "Cache consistency", "Cache stampede", "Cold start"],
+    "order_num": 4
+  },
+  {
+    "id": "database_design",
+    "name": "Database Design",
+    "level": "intermediate",
+    "description": "Approaches to designing efficient, reliable, and scalable database systems.",
+    "components": ["Relational vs NoSQL", "Database normalization", "Indexing strategies", "Partitioning and sharding", "Replication"],
+    "relational_concepts": [
+      "ACID properties",
+      "Normal forms",
+      "Transactions",
+      "Constraints and referential integrity",
+      "Query optimization"
+    ],
+    "nosql_types": [
+      "Document stores (MongoDB, Firestore)",
+      "Key-value stores (Redis, DynamoDB)",
+      "Column-family stores (Cassandra, HBase)",
+      "Graph databases (Neo4j, Amazon Neptune)"
+    ],
+    "scaling_strategies": [
+      "Master-slave replication",
+      "Master-master replication",
+      "Sharding approaches",
+      "Connection pooling",
+      "Read replicas"
+    ],
+    "order_num": 5
+  },
+  {
+    "id": "microservices",
+    "name": "Microservices Architecture",
+    "level": "intermediate",
+    "description": "Design patterns for building applications as suites of independently deployable services.",
+    "components": ["Service boundaries", "API design", "Service discovery", "Containerization", "Orchestration"],
+    "principles": [
+      "Single responsibility",
+      "Decentralized data management",
+      "Design for failure",
+      "Evolutionary design",
+      "Infrastructure automation"
+    ],
+    "patterns": [
+      "API Gateway",
+      "Circuit Breaker",
+      "CQRS (Command Query Responsibility Segregation)",
+      "Event Sourcing",
+      "Saga Pattern"
+    ],
+    "challenges": [
+      "Distributed transactions",
+      "Service discovery",
+      "Deployment complexity",
+      "Monitoring and debugging",
+      "Testing"
+    ],
+    "tools": ["Docker", "Kubernetes", "Istio", "Consul", "Prometheus"],
+    "order_num": 6
+  },
+  {
+    "id": "api_design",
+    "name": "API Design",
+    "level": "intermediate",
+    "description": "Principles and practices for designing robust, usable, and maintainable APIs.",
+    "styles": [
+      "REST (Representational State Transfer)",
+      "GraphQL",
+      "gRPC",
+      "SOAP",
+      "WebSockets"
+    ],
+    "principles": [
+      "Clear resource naming",
+      "Consistent response structures",
+      "Proper HTTP method usage",
+      "Versioning strategy",
+      "Error handling",
+      "Authentication and authorization",
+      "Rate limiting"
+    ],
+    "documentation": ["OpenAPI/Swagger", "API Blueprint", "RAML"],
+    "security_practices": [
+      "OAuth 2.0",
+      "JWT (JSON Web Tokens)",
+      "API keys",
+      "Input validation",
+      "HTTPS/TLS"
+    ],
+    "order_num": 7
+  },
+  {
+    "id": "message_queues",
+    "name": "Message Queues and Event-Driven Architecture",
+    "level": "intermediate",
+    "description": "Systems that enable asynchronous communication between services through message passing.",
+    "patterns": [
+      "Publish-Subscribe",
+      "Point-to-Point",
+      "Request-Reply",
+      "Competing Consumers"
+    ],
+    "tools": [
+      "Apache Kafka",
+      "RabbitMQ",
+      "AWS SQS",
+      "Google Cloud Pub/Sub",
+      "Azure Service Bus"
+    ],
+    "considerations": [
+      "Message ordering",
+      "Delivery guarantees",
+      "Idempotency",
+      "Message schema evolution",
+      "Dead letter queues"
+    ],
+    "use_cases": [
+      "Decoupling services",
+      "Workload distribution",
+      "Event sourcing",
+      "Data integration",
+      "Backend processing"
+    ],
+    "order_num": 8
+  },
+  {
+    "id": "distributed_systems",
+    "name": "Distributed Systems",
+    "level": "advanced",
+    "description": "Techniques for designing resilient systems across multiple machines or locations.",
+    "components": ["Consistency models", "CAP theorem", "Distributed transactions", "Fault tolerance", "Consensus algorithms"],
+    "challenges": [
+      "Network partitions",
+      "Clock synchronization",
+      "Distributed deadlocks",
+      "Split-brain problems",
+      "Data consistency"
+    ],
+    "algorithms": [
+      "Paxos",
+      "Raft",
+      "Two-Phase Commit",
+      "Gossip protocol",
+      "Vector clocks"
+    ],
+    "patterns": [
+      "Eventual consistency",
+      "Quorum-based systems",
+      "Leader election",
+      "Sharding",
+      "Replication"
+    ],
+    "order_num": 9
+  },
+  {
+    "id": "cloud_native",
+    "name": "Cloud-Native Design",
+    "level": "advanced",
+    "description": "Principles and practices for building applications optimized for cloud environments.",
+    "principles": [
+      "Design for self-healing",
+      "Elastic scaling",
+      "Infrastructure as code",
+      "Containerization",
+      "Immutable infrastructure"
+    ],
+    "technologies": [
+      "Containers (Docker)",
+      "Orchestration (Kubernetes)",
+      "Service mesh (Istio, Linkerd)",
+      "Serverless computing",
+      "Platform as a Service (PaaS)"
+    ],
+    "patterns": [
+      "Sidecar pattern",
+      "Ambassador pattern",
+      "Circuit breaker pattern",
+      "Bulkhead pattern",
+      "Throttling pattern"
+    ],
+    "observability": [
+      "Monitoring",
+      "Logging",
+      "Tracing",
+      "Metrics collection",
+      "Alerting"
+    ],
+    "providers": ["AWS", "Google Cloud Platform", "Microsoft Azure", "Digital Ocean", "IBM Cloud"],
+    "order_num": 10
+  },
+  {
+    "id": "security_design",
+    "name": "Security Design",
+    "level": "advanced",
+    "description": "Principles and practices for designing secure distributed systems.",
+    "principles": [
+      "Defense in depth",
+      "Principle of least privilege",
+      "Secure by design",
+      "Zero trust architecture",
+      "Fail securely"
+    ],
+    "components": [
+      "Authentication",
+      "Authorization",
+      "Encryption",
+      "Key management",
+      "Identity management",
+      "Secure communication",
+      "Vulnerability management"
+    ],
+    "attack_vectors": [
+      "Injection attacks",
+      "Cross-site scripting (XSS)",
+      "Cross-site request forgery (CSRF)",
+      "Denial of service (DoS)",
+      "Man-in-the-middle attacks"
+    ],
+    "compliance": ["GDPR", "HIPAA", "PCI DSS", "SOC 2", "ISO 27001"],
+    "best_practices": [
+      "Regular security audits",
+      "Penetration testing",
+      "Security code reviews",
+      "Dependency scanning",
+      "Security monitoring"
+    ],
+    "order_num": 11
+  },
+  {
+    "id": "system_design_interview",
+    "name": "System Design Interview Preparation",
+    "level": "intermediate",
+    "description": "A structured approach to solving system design interview questions.",
+    "steps": [
+      "Requirements clarification",
+      "System interface definition",
+      "Back-of-the-envelope estimation",
+      "System API design",
+      "Data model",
+      "High-level design",
+      "Detailed design",
+      "Bottlenecks identification and resolution"
+    ],
+    "common_questions": [
+      "Design a URL shortener",
+      "Design a social media feed",
+      "Design a distributed file storage service",
+      "Design a ride-sharing service",
+      "Design a notification system"
+    ],
+    "key_strategies": [
+      "Start with simple designs and iterate",
+      "Focus on the core functionality first",
+      "Understand the tradeoffs of each component",
+      "Be clear about the assumptions you're making",
+      "Address scalability from the beginning"
+    ],
+    "evaluation_criteria": [
+      "Functional completeness",
+      "Scalability",
+      "Performance",
+      "Reliability",
+      "Maintainability"
+    ],
+    "order_num": 12
+  },
+  {
+    "id": "cap_theorem",
+    "name": "CAP Theorem",
+    "level": "beginner",
+    "description": "The CAP theorem states that a distributed database system can only guarantee two of the following three properties simultaneously: Consistency, Availability, and Partition Tolerance.",
+    "components": [
+      "Consistency: All nodes see the same data at the same time",
+      "Availability: Every request receives a response, without guarantee of it containing the most recent data",
+      "Partition Tolerance: The system continues to operate despite network partitions"
+    ],
+    "systems": [
+      "CP systems: Choose consistency over availability (e.g., MongoDB, HBase)",
+      "AP systems: Choose availability over consistency (e.g., Cassandra, DynamoDB)",
+      "CA systems: Cannot exist in realistic distributed environments"
+    ],
+    "order_num": 13
+  },
+  {
+    "id": "rest_api",
+    "name": "RESTful API Design",
+    "level": "beginner",
+    "description": "REST (Representational State Transfer) is an architectural style for designing networked applications, emphasizing simplicity, scalability, and a stateless architecture.",
+    "principles": [
+      "Client-Server architecture",
+      "Statelessness",
+      "Cacheability",
+      "Uniform interface",
+      "Layered system",
+      "Code on demand (optional)"
+    ],
+    "http_methods": [
+      "GET: Retrieve a resource",
+      "POST: Create a new resource",
+      "PUT: Update an existing resource",
+      "DELETE: Remove a resource",
+      "PATCH: Partially update a resource"
+    ],
+    "order_num": 14
+  },
+  {
+    "id": "containers_orchestration",
+    "name": "Containers and Orchestration",
+    "level": "beginner",
+    "description": "Containers package software and its dependencies for consistent deployment, while orchestration tools manage these containers at scale.",
+    "components": [
+      "Containers (Docker)",
+      "Container registries",
+      "Orchestration (Kubernetes, Docker Swarm)",
+      "Service mesh",
+      "Container networking"
+    ],
+    "benefits": [
+      "Isolation",
+      "Portability",
+      "Efficient resource usage",
+      "Faster deployment",
+      "Scalability and fault tolerance"
+    ],
+    "order_num": 15
+  },
+  {
+    "id": "fault_tolerance",
+    "name": "Fault Tolerance",
+    "level": "intermediate",
+    "description": "The ability of a system to continue operating properly in the event of the failure of some of its components.",
+    "strategies": [
+      "Redundancy",
+      "Failover mechanisms",
+      "Circuit breakers",
+      "Bulkheads",
+      "Timeouts and retries"
+    ],
+    "patterns": [
+      "Active-Passive replication",
+      "Active-Active replication",
+      "Hot standby",
+      "Warm standby",
+      "Cold standby"
+    ],
+    "order_num": 16
+  },
+  {
+    "id": "data_replication",
+    "name": "Data Replication",
+    "level": "intermediate",
+    "description": "The process of storing data in multiple locations to improve reliability, fault-tolerance, and accessibility.",
+    "replication_models": [
+      "Single-master (primary-replica)",
+      "Multi-master",
+      "Chain replication",
+      "Quorum-based replication"
+    ],
+    "consistency_models": [
+      "Strong consistency",
+      "Eventual consistency",
+      "Causal consistency",
+      "Sequential consistency"
+    ],
+    "challenges": [
+      "Conflict resolution",
+      "Replication lag",
+      "Split-brain scenarios",
+      "Network partitions"
+    ],
+    "order_num": 17
+  },
+  {
+    "id": "monitoring_logging",
+    "name": "Monitoring and Logging",
+    "level": "intermediate",
+    "description": "The practice of collecting, analyzing, and using information about the operational state and behavior of systems.",
+    "components": [
+      "Metrics collection",
+      "Log aggregation",
+      "Alerting systems",
+      "Dashboards",
+      "Tracing"
+    ],
+    "tools": [
+      "Prometheus (metrics)",
+      "Grafana (visualization)",
+      "ELK Stack (logging)",
+      "Jaeger/Zipkin (tracing)",
+      "Datadog/New Relic (APM)"
+    ],
+    "best_practices": [
+      "Monitor the Four Golden Signals: latency, traffic, errors, saturation",
+      "Set actionable alerts",
+      "Implement structured logging",
+      "Use distributed tracing for complex systems",
+      "Establish baseline metrics"
+    ],
+    "order_num": 18
+  },
+  {
+    "id": "consensus_algorithms",
+    "name": "Consensus Algorithms",
+    "level": "advanced",
+    "description": "Algorithms that enable distributed systems to agree on a single data value or system state, despite potential failures.",
+    "algorithms": [
+      "Paxos: Classic consensus algorithm",
+      "Raft: Designed for understandability",
+      "Zab: Used in ZooKeeper",
+      "PBFT (Practical Byzantine Fault Tolerance)",
+      "Gossip protocols"
+    ],
+    "applications": [
+      "Leader election",
+      "Distributed locks",
+      "Configuration management",
+      "Distributed transactions",
+      "State machine replication"
+    ],
+    "order_num": 19
+  },
+  {
+    "id": "eventual_consistency",
+    "name": "Eventual Consistency",
+    "level": "advanced",
+    "description": "A consistency model where, given enough time without updates, all replicas of data will converge to the same state.",
+    "characteristics": [
+      "High availability",
+      "Partition tolerance",
+      "Low latency for writes",
+      "Temporary inconsistencies are acceptable",
+      "Conflict resolution is necessary"
+    ],
+    "techniques": [
+      "Vector clocks",
+      "Conflict-free replicated data types (CRDTs)",
+      "Operational transforms",
+      "Last-writer-wins",
+      "Application-specific conflict resolution"
+    ],
+    "use_cases": [
+      "Social media platforms",
+      "Shopping carts",
+      "Collaborative editing",
+      "DNS systems",
+      "NoSQL databases"
+    ],
+    "order_num": 20
+  },
+  {
+    "id": "search_systems",
+    "name": "Search System Design",
+    "level": "advanced",
+    "description": "The architecture and implementation of systems for efficiently searching and retrieving information from large datasets.",
+    "components": [
+      "Inverted indexes",
+      "Document processing pipeline",
+      "Query processing",
+      "Ranking algorithms",
+      "Relevance scoring"
+    ],
+    "techniques": [
+      "TF-IDF (Term Frequency-Inverse Document Frequency)",
+      "Vector space models",
+      "Sharding and partitioning",
+      "Caching",
+      "Query expansion and suggestion"
+    ],
+    "technologies": [
+      "Elasticsearch",
+      "Solr",
+      "Lucene",
+      "Algolia",
+      "Meilisearch"
+    ],
+    "order_num": 21
+  }
+]

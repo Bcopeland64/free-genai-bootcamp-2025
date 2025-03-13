@@ -1,0 +1,360 @@
+[
+  {
+    "id": "arrays",
+    "name": "Arrays",
+    "level": "beginner",
+    "description": "Arrays are a fundamental data structure that store elements of the same type in contiguous memory locations. They provide O(1) access to elements by index.",
+    "time_complexity": {
+      "access": "O(1)",
+      "search": "O(n)",
+      "insertion": "O(n)",
+      "deletion": "O(n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Storing collections of similar items", "Implementing other data structures", "Buffering data", "Lookup tables"],
+    "order_num": 1
+  },
+  {
+    "id": "linked_lists",
+    "name": "Linked Lists",
+    "level": "beginner",
+    "description": "Linked lists are linear data structures where elements are stored in nodes, each pointing to the next node in the sequence. They provide efficient insertions and deletions.",
+    "time_complexity": {
+      "access": "O(n)",
+      "search": "O(n)",
+      "insertion": "O(1)",
+      "deletion": "O(1)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Dynamic memory allocation", "Implementing stacks and queues", "Adjacency lists for graphs", "Hash tables (chaining)"],
+    "order_num": 2
+  },
+  {
+    "id": "stacks",
+    "name": "Stacks",
+    "level": "beginner",
+    "description": "Stacks are abstract data types that follow the Last In, First Out (LIFO) principle. Elements are added and removed from the same end, called the top.",
+    "time_complexity": {
+      "push": "O(1)",
+      "pop": "O(1)",
+      "peek": "O(1)",
+      "search": "O(n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Function call management", "Expression evaluation", "Undo mechanisms", "Backtracking algorithms"],
+    "order_num": 3
+  },
+  {
+    "id": "queues",
+    "name": "Queues",
+    "level": "beginner",
+    "description": "Queues are abstract data types that follow the First In, First Out (FIFO) principle. Elements are added at the rear and removed from the front.",
+    "time_complexity": {
+      "enqueue": "O(1)",
+      "dequeue": "O(1)",
+      "peek": "O(1)",
+      "search": "O(n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Scheduling", "Breadth-first search", "Buffering", "Message queues in distributed systems"],
+    "order_num": 4
+  },
+  {
+    "id": "hash_tables",
+    "name": "Hash Tables",
+    "level": "intermediate",
+    "description": "Hash tables store key-value pairs and use a hash function to map keys to array indices, providing efficient lookups, insertions, and deletions.",
+    "time_complexity": {
+      "search": "O(1) average, O(n) worst",
+      "insertion": "O(1) average, O(n) worst",
+      "deletion": "O(1) average, O(n) worst"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Implementing dictionaries", "Database indexing", "Caching", "Counting frequencies"],
+    "order_num": 5
+  },
+  {
+    "id": "trees",
+    "name": "Trees",
+    "level": "intermediate",
+    "description": "Trees are hierarchical data structures consisting of nodes with parent-child relationships. They are widely used for representing hierarchical relationships.",
+    "time_complexity": {
+      "search": "O(log n) to O(n)",
+      "insertion": "O(log n) to O(n)",
+      "deletion": "O(log n) to O(n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Hierarchical data representation", "Binary search trees", "Expression parsing", "Decision trees"],
+    "order_num": 6
+  },
+  {
+    "id": "binary_search_trees",
+    "name": "Binary Search Trees",
+    "level": "intermediate",
+    "description": "A binary search tree is a binary tree where for each node, all elements in the left subtree are less than the node, and all elements in the right subtree are greater.",
+    "time_complexity": {
+      "search": "O(log n) average, O(n) worst",
+      "insertion": "O(log n) average, O(n) worst",
+      "deletion": "O(log n) average, O(n) worst"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Efficient searching and sorting", "Priority queues", "Symbol tables", "Database indexing"],
+    "order_num": 7
+  },
+  {
+    "id": "heaps",
+    "name": "Heaps",
+    "level": "intermediate",
+    "description": "Heaps are specialized tree-based data structures that satisfy the heap property. They are commonly used to implement priority queues.",
+    "time_complexity": {
+      "find_max/min": "O(1)",
+      "insert": "O(log n)",
+      "delete_max/min": "O(log n)",
+      "heapify": "O(n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Priority queues", "Heap sort", "Graph algorithms (Dijkstra's)", "Task scheduling"],
+    "order_num": 8
+  },
+  {
+    "id": "graphs",
+    "name": "Graphs",
+    "level": "advanced",
+    "description": "Graphs are non-linear data structures consisting of vertices and edges that connect these vertices. They represent relationships between pairs of objects.",
+    "representations": ["Adjacency Matrix", "Adjacency List", "Edge List"],
+    "traversals": ["Breadth-First Search (BFS)", "Depth-First Search (DFS)"],
+    "algorithms": ["Dijkstra's Algorithm", "Bellman-Ford", "Kruskal's Algorithm", "Prim's Algorithm"],
+    "space_complexity": "O(V + E) for adjacency list, O(V²) for adjacency matrix",
+    "use_cases": ["Social networks", "Web page linking", "Road networks", "Dependency resolution"],
+    "order_num": 9
+  },
+  {
+    "id": "sorting",
+    "name": "Sorting Algorithms",
+    "level": "intermediate",
+    "description": "Algorithms that arrange elements in a specific order, typically ascending or descending. Different algorithms have various trade-offs in terms of time and space complexity.",
+    "algorithms": [
+      {"name": "Bubble Sort", "time": "O(n²)", "space": "O(1)", "stable": true},
+      {"name": "Selection Sort", "time": "O(n²)", "space": "O(1)", "stable": false},
+      {"name": "Insertion Sort", "time": "O(n²)", "space": "O(1)", "stable": true},
+      {"name": "Merge Sort", "time": "O(n log n)", "space": "O(n)", "stable": true},
+      {"name": "Quick Sort", "time": "O(n log n) average, O(n²) worst", "space": "O(log n)", "stable": false},
+      {"name": "Heap Sort", "time": "O(n log n)", "space": "O(1)", "stable": false},
+      {"name": "Radix Sort", "time": "O(nk)", "space": "O(n+k)", "stable": true},
+      {"name": "Counting Sort", "time": "O(n+k)", "space": "O(n+k)", "stable": true}
+    ],
+    "order_num": 10
+  },
+  {
+    "id": "searching",
+    "name": "Searching Algorithms",
+    "level": "intermediate",
+    "description": "Algorithms for finding an element within a data structure.",
+    "algorithms": [
+      {"name": "Linear Search", "time": "O(n)", "space": "O(1)"},
+      {"name": "Binary Search", "time": "O(log n)", "space": "O(1)"},
+      {"name": "Jump Search", "time": "O(√n)", "space": "O(1)"},
+      {"name": "Interpolation Search", "time": "O(log log n) average, O(n) worst", "space": "O(1)"},
+      {"name": "Exponential Search", "time": "O(log n)", "space": "O(1)"}
+    ],
+    "use_cases": ["Finding elements in sorted arrays", "Database queries", "Pattern matching", "Information retrieval"],
+    "order_num": 11
+  },
+  {
+    "id": "greedy_algorithms",
+    "name": "Greedy Algorithms",
+    "level": "advanced",
+    "description": "Algorithms that make locally optimal choices at each stage with the hope of finding a global optimum. They are often efficient but don't always guarantee the optimal solution.",
+    "characteristics": ["Make local optimal choices", "Never reconsider decisions", "Simple and efficient"],
+    "examples": ["Huffman coding", "Dijkstra's algorithm", "Kruskal's algorithm", "Activity selection problem"],
+    "limitations": ["May not always find the global optimum", "Requires careful problem formulation"],
+    "order_num": 12
+  },
+  {
+    "id": "dynamic_programming",
+    "name": "Dynamic Programming",
+    "level": "advanced",
+    "description": "A method for solving complex problems by breaking them down into simpler subproblems and storing the results to avoid redundant computation.",
+    "characteristics": ["Optimal substructure", "Overlapping subproblems", "Memoization", "Tabulation"],
+    "use_cases": ["Fibonacci sequence", "Shortest path algorithms", "Knapsack problem", "Sequence alignment"],
+    "classic_problems": [
+      "Longest Common Subsequence",
+      "0/1 Knapsack",
+      "Matrix Chain Multiplication",
+      "Edit Distance",
+      "Coin Change"
+    ],
+    "order_num": 13
+  },
+  {
+    "id": "backtracking",
+    "name": "Backtracking",
+    "level": "advanced",
+    "description": "An algorithmic technique that builds a solution incrementally, abandoning a candidate (backtracking) as soon as it determines the candidate cannot lead to a valid solution.",
+    "characteristics": ["Depth-first search approach", "Pruning invalid paths", "Recursion-based"],
+    "examples": ["N-Queens Problem", "Sudoku solver", "Hamiltonian Path", "Subset Sum", "Graph Coloring"],
+    "time_complexity": "Often exponential O(b^d) where b is branching factor and d is solution depth",
+    "order_num": 14
+  },
+  {
+    "id": "recursion",
+    "name": "Recursion",
+    "level": "beginner",
+    "description": "Recursion is a technique where a function calls itself to solve smaller instances of the same problem.",
+    "time_complexity": "Varies based on the specific algorithm",
+    "space_complexity": "O(n) for the call stack in most cases",
+    "use_cases": ["Tree traversals", "Divide and conquer algorithms", "Backtracking", "Dynamic programming"],
+    "order_num": 17
+  },
+  {
+    "id": "strings",
+    "name": "String Algorithms",
+    "level": "beginner",
+    "description": "Algorithms that process and manipulate text or string data efficiently.",
+    "time_complexity": {
+      "basic_operations": "O(1) to O(n)",
+      "pattern_matching": "O(n+m) using KMP or Boyer-Moore"
+    },
+    "space_complexity": "O(n) in most cases",
+    "use_cases": ["Text processing", "Pattern matching", "Compression", "Spelling correction"],
+    "order_num": 18
+  },
+  {
+    "id": "two_pointers",
+    "name": "Two Pointers Technique",
+    "level": "beginner",
+    "description": "A technique that uses two pointers to iterate through a data structure, often moving in tandem or towards each other.",
+    "time_complexity": "Usually O(n)",
+    "space_complexity": "O(1) as it uses only two pointers",
+    "use_cases": ["Finding pairs in sorted arrays", "Palindrome checking", "Cyclic detection", "Sliding window problems"],
+    "order_num": 19
+  },
+  {
+    "id": "sliding_window",
+    "name": "Sliding Window",
+    "level": "beginner",
+    "description": "A technique that involves maintaining a window of elements and sliding it through a larger data structure to solve problems efficiently.",
+    "time_complexity": "Usually O(n)",
+    "space_complexity": "O(1) to O(k) where k is window size",
+    "use_cases": ["Substring problems", "Maximum/minimum subarrays", "String matching", "Finding contiguous sequences"],
+    "order_num": 20
+  },
+  {
+    "id": "divide_and_conquer",
+    "name": "Divide and Conquer",
+    "level": "intermediate",
+    "description": "A paradigm that breaks a problem into smaller subproblems, solves them recursively, and combines their solutions to solve the original problem.",
+    "time_complexity": "Often O(n log n) but varies",
+    "characteristics": ["Problem division", "Recursive solution", "Solution combination"],
+    "examples": ["Merge sort", "Quick sort", "Binary search", "Strassen's matrix multiplication"],
+    "order_num": 21
+  },
+  {
+    "id": "avl_trees",
+    "name": "AVL Trees",
+    "level": "intermediate",
+    "description": "Self-balancing binary search trees where the heights of the two child subtrees of any node differ by at most one.",
+    "time_complexity": {
+      "search": "O(log n)",
+      "insertion": "O(log n)",
+      "deletion": "O(log n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Databases", "Priority queues", "In-memory sorting", "Sets and maps implementation"],
+    "order_num": 22
+  },
+  {
+    "id": "red_black_trees",
+    "name": "Red-Black Trees",
+    "level": "intermediate",
+    "description": "Self-balancing binary search trees with an extra bit of information (color) per node, used to ensure the tree remains approximately balanced.",
+    "time_complexity": {
+      "search": "O(log n)",
+      "insertion": "O(log n)",
+      "deletion": "O(log n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Implementing maps and sets", "Java's TreeMap and TreeSet", "Linux kernel's process scheduling"],
+    "order_num": 23
+  },
+  {
+    "id": "disjoint_set",
+    "name": "Disjoint Set (Union Find)",
+    "level": "intermediate",
+    "description": "A data structure that keeps track of a set of elements partitioned into a number of disjoint (non-overlapping) subsets.",
+    "time_complexity": {
+      "find": "O(α(n)) amortized with path compression",
+      "union": "O(α(n)) amortized with union by rank"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Kruskal's algorithm for MST", "Detecting cycles in graphs", "Finding connected components", "Online connectivity problems"],
+    "order_num": 24
+  },
+  {
+    "id": "topological_sort",
+    "name": "Topological Sort",
+    "level": "advanced",
+    "description": "An algorithm for ordering the vertices of a directed acyclic graph (DAG) such that for every directed edge (u, v), vertex u comes before v in the ordering.",
+    "time_complexity": "O(V + E) where V is vertices and E is edges",
+    "space_complexity": "O(V)",
+    "use_cases": ["Scheduling jobs", "Course prerequisites", "Symbol dependencies in linkers", "Task ordering"],
+    "order_num": 25
+  },
+  {
+    "id": "segment_trees",
+    "name": "Segment Trees",
+    "level": "advanced",
+    "description": "A tree data structure used for storing information about intervals, or segments, allowing querying which of the stored segments contain a given point.",
+    "time_complexity": {
+      "build": "O(n)",
+      "query": "O(log n)",
+      "update": "O(log n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Range queries", "Finding minimum/maximum", "Sum queries", "Lazy propagation for range updates"],
+    "order_num": 26
+  },
+  {
+    "id": "suffix_arrays",
+    "name": "Suffix Arrays and Trees",
+    "level": "advanced",
+    "description": "Data structures that represent the suffixes of a string, sorted lexicographically, enabling efficient string operations.",
+    "time_complexity": {
+      "construction": "O(n log n) for suffix arrays, O(n) for suffix trees",
+      "pattern_matching": "O(m log n) for suffix arrays, O(m) for suffix trees"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": ["Pattern matching", "Longest common substring", "Genome sequence analysis", "Data compression"],
+    "order_num": 27
+  },
+  {
+    "id": "bit_manipulation",
+    "name": "Bit Manipulation",
+    "level": "intermediate",
+    "description": "Techniques for manipulating data at the bit level, which can lead to efficient algorithms for certain problems.",
+    "operations": ["AND", "OR", "XOR", "NOT", "Shift left", "Shift right"],
+    "common_techniques": [
+      "Check if a bit is set: (num & (1 << pos))",
+      "Set a bit: (num | (1 << pos))",
+      "Clear a bit: (num & ~(1 << pos))",
+      "Toggle a bit: (num ^ (1 << pos))",
+      "Count set bits: Brian Kernighan's Algorithm"
+    ],
+    "use_cases": ["Compression", "Cryptography", "Low-level system programming", "Optimization problems"],
+    "order_num": 15
+  },
+  {
+    "id": "trie",
+    "name": "Trie (Prefix Tree)",
+    "level": "advanced",
+    "description": "A tree-like data structure used to store a dynamic set of strings, where keys are usually strings. Particularly efficient for dictionary operations.",
+    "time_complexity": {
+      "search": "O(m) where m is the length of the key",
+      "insertion": "O(m)",
+      "deletion": "O(m)"
+    },
+    "space_complexity": "O(ALPHABET_SIZE * m * n) where n is number of keys",
+    "use_cases": ["Autocomplete suggestions", "Spell checking", "IP routing (longest prefix matching)", "T9 predictive text"],
+    "order_num": 16
+  }
+]

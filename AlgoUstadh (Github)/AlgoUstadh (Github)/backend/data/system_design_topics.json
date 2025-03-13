@@ -1,0 +1,380 @@
+[
+  {
+    "id": "system_design_fundamentals",
+    "name": "System Design Fundamentals",
+    "description": "Core concepts and principles that form the foundation of designing large-scale systems. These include understanding requirements, identifying constraints, and making appropriate trade-offs.",
+    "category": "system_design",
+    "subcategory": null,
+    "level": "beginner",
+    "order_num": 1,
+    "components": [
+      "Requirements analysis",
+      "Capacity planning",
+      "Scalability principles",
+      "Reliability considerations",
+      "Performance metrics"
+    ],
+    "use_cases": [
+      "All system design challenges",
+      "Technical interviews",
+      "Project planning phases"
+    ],
+    "best_practices": [
+      "Start with clear requirements",
+      "Identify constraints early",
+      "Make explicit trade-offs",
+      "Consider both functional and non-functional requirements",
+      "Use back-of-the-envelope calculations"
+    ]
+  },
+  {
+    "id": "scalability",
+    "name": "Scalability",
+    "description": "The capability of a system to handle growing amounts of work or its potential to accommodate growth. Scalability involves handling increased load without degrading performance significantly.",
+    "category": "system_design",
+    "subcategory": null,
+    "level": "beginner",
+    "order_num": 2,
+    "components": [
+      "Vertical scaling (scaling up)",
+      "Horizontal scaling (scaling out)",
+      "Load balancing",
+      "Database sharding",
+      "Caching strategies",
+      "Stateless design"
+    ],
+    "use_cases": [
+      "High-traffic web applications",
+      "Streaming services",
+      "E-commerce platforms",
+      "Social media networks"
+    ],
+    "best_practices": [
+      "Design for horizontal scaling from the start",
+      "Implement proper caching strategies",
+      "Use stateless design principles when possible",
+      "Monitor performance metrics",
+      "Plan capacity based on growth projections"
+    ]
+  },
+  {
+    "id": "load_balancing",
+    "name": "Load Balancing",
+    "description": "The process of distributing network traffic across multiple servers to ensure no single server bears too much demand. This improves responsiveness and availability of applications and websites for users.",
+    "category": "system_design",
+    "subcategory": null,
+    "level": "beginner",
+    "order_num": 3,
+    "components": [
+      "Hardware load balancers",
+      "Software load balancers",
+      "Layer 4 load balancing (transport layer)",
+      "Layer 7 load balancing (application layer)",
+      "Load balancing algorithms"
+    ],
+    "use_cases": [
+      "Web server farms",
+      "Database clusters",
+      "Microservices architectures",
+      "Content delivery networks"
+    ],
+    "best_practices": [
+      "Implement health checks",
+      "Configure session persistence when needed",
+      "Consider geographic distribution for global applications",
+      "Set up proper failover mechanisms",
+      "Monitor load balancer performance"
+    ]
+  },
+  {
+    "id": "caching",
+    "name": "Caching",
+    "description": "Storing copies of data in a higher-speed storage layer to reduce access times, decrease load on lower resources, and increase application performance.",
+    "category": "system_design",
+    "subcategory": null,
+    "level": "beginner",
+    "order_num": 4,
+    "components": [
+      "Client-side caching",
+      "CDN caching",
+      "Web server caching",
+      "Database caching",
+      "Application caching",
+      "Cache eviction policies"
+    ],
+    "use_cases": [
+      "Web page content caching",
+      "API response caching",
+      "Database query results caching",
+      "Session data storage",
+      "Static asset delivery"
+    ],
+    "best_practices": [
+      "Cache data that's read frequently but modified infrequently",
+      "Implement appropriate cache invalidation strategies",
+      "Set reasonable TTL (Time To Live) values",
+      "Use cache hierarchies for different types of data",
+      "Monitor cache hit ratios"
+    ]
+  },
+  {
+    "id": "database_design",
+    "name": "Database Design",
+    "description": "Designing database systems that can store, retrieve, and process data efficiently while maintaining data integrity, scalability, and reliability.",
+    "category": "system_design",
+    "subcategory": null,
+    "level": "intermediate",
+    "order_num": 5,
+    "components": [
+      "Relational databases",
+      "NoSQL databases",
+      "Replication",
+      "Sharding",
+      "Indexing",
+      "Normalization/denormalization",
+      "ACID properties"
+    ],
+    "use_cases": [
+      "Transactional systems",
+      "Analytical data processing",
+      "Content management systems",
+      "User data storage",
+      "Real-time data processing"
+    ],
+    "best_practices": [
+      "Choose the right database type for your use case",
+      "Design proper indexing strategy",
+      "Implement appropriate normalization/denormalization",
+      "Plan for database scaling early",
+      "Set up proper backup and recovery mechanisms"
+    ]
+  },
+  {
+    "id": "api_design",
+    "name": "API Design",
+    "description": "Designing application programming interfaces that are robust, scalable, maintainable, and developer-friendly for both internal and external use.",
+    "category": "system_design",
+    "subcategory": null,
+    "level": "intermediate",
+    "order_num": 6,
+    "components": [
+      "REST APIs",
+      "GraphQL",
+      "gRPC",
+      "WebSockets",
+      "API versioning",
+      "Authentication/Authorization",
+      "Rate limiting"
+    ],
+    "use_cases": [
+      "Service integration",
+      "Mobile app backends",
+      "Microservices communication",
+      "Third-party developer platforms",
+      "IoT device communication"
+    ],
+    "best_practices": [
+      "Use consistent naming conventions",
+      "Implement proper error handling",
+      "Document APIs thoroughly",
+      "Consider versioning strategy",
+      "Design with backward compatibility in mind",
+      "Implement appropriate security measures"
+    ]
+  },
+  {
+    "id": "microservices",
+    "name": "Microservices Architecture",
+    "description": "An architectural style that structures an application as a collection of small, loosely coupled services, each focusing on a specific business functionality.",
+    "category": "system_design",
+    "subcategory": null,
+    "level": "intermediate",
+    "order_num": 7,
+    "components": [
+      "Service discovery",
+      "API gateway",
+      "Inter-service communication",
+      "Containerization",
+      "Orchestration",
+      "Circuit breakers",
+      "Monitoring and observability"
+    ],
+    "use_cases": [
+      "Large-scale applications",
+      "Multi-team development environments",
+      "Systems with varying scalability needs",
+      "Applications requiring independent deployment",
+      "Polyglot programming environments"
+    ],
+    "best_practices": [
+      "Design services around business capabilities",
+      "Implement proper service boundaries",
+      "Use asynchronous communication when possible",
+      "Implement robust service discovery",
+      "Design for failure",
+      "Ensure observability across services"
+    ]
+  },
+  {
+    "id": "distributed_systems",
+    "name": "Distributed Systems",
+    "description": "Systems with components located on different networked computers that communicate and coordinate to appear as a single coherent system to end-users.",
+    "category": "system_design",
+    "subcategory": null,
+    "level": "advanced",
+    "order_num": 8,
+    "components": [
+      "Consensus algorithms",
+      "Distributed transactions",
+      "CAP theorem",
+      "Eventual consistency",
+      "Fault tolerance",
+      "Partition tolerance",
+      "Clock synchronization"
+    ],
+    "use_cases": [
+      "Global-scale applications",
+      "Cloud computing platforms",
+      "Distributed databases",
+      "Blockchain systems",
+      "Peer-to-peer networks"
+    ],
+    "best_practices": [
+      "Design for partial failures",
+      "Implement idempotent operations",
+      "Use appropriate consistency models",
+      "Implement proper logging and monitoring",
+      "Consider network partitioning scenarios",
+      "Understand CAP theorem trade-offs"
+    ]
+  },
+  {
+    "id": "system_design_patterns",
+    "name": "System Design Patterns",
+    "description": "Established solutions to common design problems in distributed systems, providing templates for solving specific categories of architecture challenges.",
+    "category": "system_design",
+    "subcategory": null,
+    "level": "advanced",
+    "order_num": 9,
+    "components": [
+      "Circuit Breaker pattern",
+      "Bulkhead pattern",
+      "CQRS pattern",
+      "Event Sourcing pattern",
+      "Saga pattern",
+      "Sidecar pattern",
+      "Strangler pattern"
+    ],
+    "use_cases": [
+      "Microservices architectures",
+      "Fault-tolerant systems",
+      "High-throughput data processing",
+      "Legacy system migrations",
+      "Complex business logic implementations"
+    ],
+    "best_practices": [
+      "Choose patterns based on specific requirements",
+      "Combine patterns when appropriate",
+      "Understand pattern trade-offs",
+      "Don't over-engineer with unnecessary patterns",
+      "Document pattern usage for maintainability"
+    ]
+  },
+  {
+    "id": "security_design",
+    "name": "Security in System Design",
+    "description": "Principles and practices for designing systems that protect data confidentiality, integrity, and availability while providing secure access control and authentication mechanisms.",
+    "category": "system_design",
+    "subcategory": null,
+    "level": "advanced",
+    "order_num": 10,
+    "components": [
+      "Authentication systems",
+      "Authorization frameworks",
+      "Encryption (in transit and at rest)",
+      "Security protocols",
+      "Threat modeling",
+      "Security monitoring",
+      "Zero trust architecture"
+    ],
+    "use_cases": [
+      "Financial systems",
+      "Healthcare applications",
+      "E-commerce platforms",
+      "Identity management systems",
+      "Enterprise applications"
+    ],
+    "best_practices": [
+      "Implement defense in depth",
+      "Never trust user input",
+      "Apply principle of least privilege",
+      "Use established security libraries",
+      "Conduct regular security reviews",
+      "Implement proper logging for security events",
+      "Keep dependencies updated"
+    ]
+  },
+  {
+    "id": "real_world_case_studies",
+    "name": "Real-world System Design Case Studies",
+    "description": "Analysis of how popular tech companies have designed their systems to handle complex requirements, large scale, and specific business challenges.",
+    "category": "system_design",
+    "subcategory": null,
+    "level": "advanced",
+    "order_num": 11,
+    "components": [
+      "URL shortener design",
+      "Social media platform architecture",
+      "Video streaming service design",
+      "E-commerce platform architecture",
+      "Ride-sharing application design",
+      "Chat application architecture"
+    ],
+    "use_cases": [
+      "Technical interviews preparation",
+      "Learning from real implementations",
+      "Comparative analysis of different approaches",
+      "Understanding industry best practices"
+    ],
+    "best_practices": [
+      "Analyze multiple dimensions (scalability, reliability, etc.)",
+      "Understand business requirements driving design decisions",
+      "Consider both successes and failures",
+      "Apply relevant patterns to your own designs",
+      "Stay updated with evolving architectures"
+    ]
+  },
+  {
+    "id": "system_design_interview",
+    "name": "System Design Interview Preparation",
+    "description": "Structured approach to tackling system design interview questions, including frameworks for analyzing requirements, designing high-level architecture, and discussing trade-offs.",
+    "category": "system_design",
+    "subcategory": null,
+    "level": "intermediate",
+    "order_num": 12,
+    "components": [
+      "Requirements clarification",
+      "Back-of-the-envelope calculations",
+      "System interface definition",
+      "High-level design",
+      "Detailed design",
+      "Bottlenecks identification",
+      "Trade-off discussion"
+    ],
+    "use_cases": [
+      "Technical interviews at top tech companies",
+      "Senior/staff engineer role preparation",
+      "Architecture role interviews",
+      "Team design discussions"
+    ],
+    "best_practices": [
+      "Practice structured approach",
+      "Ask clarifying questions",
+      "Make reasonable assumptions",
+      "Start with high-level design before details",
+      "Discuss trade-offs explicitly",
+      "Practice drawing clear diagrams",
+      "Learn from feedback"
+    ]
+  }
+]

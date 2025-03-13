@@ -1,0 +1,2031 @@
+[
+  {
+    "id": "arrays",
+    "name": "Arrays",
+    "level": "beginner",
+    "description": "Arrays are a fundamental data structure that store elements of the same type in contiguous memory locations. They provide O(1) access to elements by index.",
+    "time_complexity": {
+      "access": "O(1)",
+      "search": "O(n)",
+      "insertion": "O(n)",
+      "deletion": "O(n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": [
+      "Storing collections of similar items",
+      "Implementing other data structures",
+      "Buffering data",
+      "Lookup tables"
+    ],
+    "order_num": 1,
+    "category": "dsa"
+  },
+  {
+    "id": "linked_lists",
+    "name": "Linked Lists",
+    "level": "beginner",
+    "description": "Linked lists are linear data structures where elements are stored in nodes, each pointing to the next node in the sequence. They provide efficient insertions and deletions.",
+    "time_complexity": {
+      "access": "O(n)",
+      "search": "O(n)",
+      "insertion": "O(1)",
+      "deletion": "O(1)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": [
+      "Dynamic memory allocation",
+      "Implementing stacks and queues",
+      "Adjacency lists for graphs",
+      "Hash tables (chaining)"
+    ],
+    "order_num": 2,
+    "category": "dsa"
+  },
+  {
+    "id": "stacks",
+    "name": "Stacks",
+    "level": "beginner",
+    "description": "Stacks are abstract data types that follow the Last In, First Out (LIFO) principle. Elements are added and removed from the same end, called the top.",
+    "time_complexity": {
+      "push": "O(1)",
+      "pop": "O(1)",
+      "peek": "O(1)",
+      "search": "O(n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": [
+      "Function call management",
+      "Expression evaluation",
+      "Undo mechanisms",
+      "Backtracking algorithms"
+    ],
+    "order_num": 3,
+    "category": "dsa"
+  },
+  {
+    "id": "queues",
+    "name": "Queues",
+    "level": "beginner",
+    "description": "Queues are abstract data types that follow the First In, First Out (FIFO) principle. Elements are added at the rear and removed from the front.",
+    "time_complexity": {
+      "enqueue": "O(1)",
+      "dequeue": "O(1)",
+      "peek": "O(1)",
+      "search": "O(n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": [
+      "Scheduling",
+      "Breadth-first search",
+      "Buffering",
+      "Message queues in distributed systems"
+    ],
+    "order_num": 4,
+    "category": "dsa"
+  },
+  {
+    "id": "hash_tables",
+    "name": "Hash Tables",
+    "level": "intermediate",
+    "description": "Hash tables store key-value pairs and use a hash function to map keys to array indices, providing efficient lookups, insertions, and deletions.",
+    "time_complexity": {
+      "search": "O(1) average, O(n) worst",
+      "insertion": "O(1) average, O(n) worst",
+      "deletion": "O(1) average, O(n) worst"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": [
+      "Implementing dictionaries",
+      "Database indexing",
+      "Caching",
+      "Counting frequencies"
+    ],
+    "order_num": 5,
+    "category": "dsa"
+  },
+  {
+    "id": "trees",
+    "name": "Trees",
+    "level": "intermediate",
+    "description": "Trees are hierarchical data structures consisting of nodes with parent-child relationships. They are widely used for representing hierarchical relationships.",
+    "time_complexity": {
+      "search": "O(log n) to O(n)",
+      "insertion": "O(log n) to O(n)",
+      "deletion": "O(log n) to O(n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": [
+      "Hierarchical data representation",
+      "Binary search trees",
+      "Expression parsing",
+      "Decision trees"
+    ],
+    "order_num": 6,
+    "category": "dsa"
+  },
+  {
+    "id": "binary_search_trees",
+    "name": "Binary Search Trees",
+    "level": "intermediate",
+    "description": "A binary search tree is a binary tree where for each node, all elements in the left subtree are less than the node, and all elements in the right subtree are greater.",
+    "time_complexity": {
+      "search": "O(log n) average, O(n) worst",
+      "insertion": "O(log n) average, O(n) worst",
+      "deletion": "O(log n) average, O(n) worst"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": [
+      "Efficient searching and sorting",
+      "Priority queues",
+      "Symbol tables",
+      "Database indexing"
+    ],
+    "order_num": 7,
+    "category": "dsa"
+  },
+  {
+    "id": "heaps",
+    "name": "Heaps",
+    "level": "intermediate",
+    "description": "Heaps are specialized tree-based data structures that satisfy the heap property. They are commonly used to implement priority queues.",
+    "time_complexity": {
+      "find_max/min": "O(1)",
+      "insert": "O(log n)",
+      "delete_max/min": "O(log n)",
+      "heapify": "O(n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": [
+      "Priority queues",
+      "Heap sort",
+      "Graph algorithms (Dijkstra's)",
+      "Task scheduling"
+    ],
+    "order_num": 8,
+    "category": "dsa"
+  },
+  {
+    "id": "graphs",
+    "name": "Graphs",
+    "level": "advanced",
+    "description": "Graphs are non-linear data structures consisting of vertices and edges that connect these vertices. They represent relationships between pairs of objects.",
+    "representations": [
+      "Adjacency Matrix",
+      "Adjacency List",
+      "Edge List"
+    ],
+    "traversals": [
+      "Breadth-First Search (BFS)",
+      "Depth-First Search (DFS)"
+    ],
+    "algorithms": [
+      "Dijkstra's Algorithm",
+      "Bellman-Ford",
+      "Kruskal's Algorithm",
+      "Prim's Algorithm"
+    ],
+    "space_complexity": "O(V + E) for adjacency list, O(V\u00b2) for adjacency matrix",
+    "use_cases": [
+      "Social networks",
+      "Web page linking",
+      "Road networks",
+      "Dependency resolution"
+    ],
+    "order_num": 9,
+    "category": "dsa"
+  },
+  {
+    "id": "sorting",
+    "name": "Sorting Algorithms",
+    "level": "intermediate",
+    "description": "Algorithms that arrange elements in a specific order, typically ascending or descending. Different algorithms have various trade-offs in terms of time and space complexity.",
+    "algorithms": [
+      {
+        "name": "Bubble Sort",
+        "time": "O(n\u00b2)",
+        "space": "O(1)",
+        "stable": true
+      },
+      {
+        "name": "Selection Sort",
+        "time": "O(n\u00b2)",
+        "space": "O(1)",
+        "stable": false
+      },
+      {
+        "name": "Insertion Sort",
+        "time": "O(n\u00b2)",
+        "space": "O(1)",
+        "stable": true
+      },
+      {
+        "name": "Merge Sort",
+        "time": "O(n log n)",
+        "space": "O(n)",
+        "stable": true
+      },
+      {
+        "name": "Quick Sort",
+        "time": "O(n log n) average, O(n\u00b2) worst",
+        "space": "O(log n)",
+        "stable": false
+      },
+      {
+        "name": "Heap Sort",
+        "time": "O(n log n)",
+        "space": "O(1)",
+        "stable": false
+      },
+      {
+        "name": "Radix Sort",
+        "time": "O(nk)",
+        "space": "O(n+k)",
+        "stable": true
+      },
+      {
+        "name": "Counting Sort",
+        "time": "O(n+k)",
+        "space": "O(n+k)",
+        "stable": true
+      }
+    ],
+    "order_num": 10,
+    "category": "dsa"
+  },
+  {
+    "id": "searching",
+    "name": "Searching Algorithms",
+    "level": "intermediate",
+    "description": "Algorithms for finding an element within a data structure.",
+    "algorithms": [
+      {
+        "name": "Linear Search",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "name": "Binary Search",
+        "time": "O(log n)",
+        "space": "O(1)"
+      },
+      {
+        "name": "Jump Search",
+        "time": "O(\u221an)",
+        "space": "O(1)"
+      },
+      {
+        "name": "Interpolation Search",
+        "time": "O(log log n) average, O(n) worst",
+        "space": "O(1)"
+      },
+      {
+        "name": "Exponential Search",
+        "time": "O(log n)",
+        "space": "O(1)"
+      }
+    ],
+    "use_cases": [
+      "Finding elements in sorted arrays",
+      "Database queries",
+      "Pattern matching",
+      "Information retrieval"
+    ],
+    "order_num": 11,
+    "category": "dsa"
+  },
+  {
+    "id": "greedy_algorithms",
+    "name": "Greedy Algorithms",
+    "level": "advanced",
+    "description": "Algorithms that make locally optimal choices at each stage with the hope of finding a global optimum. They are often efficient but don't always guarantee the optimal solution.",
+    "characteristics": [
+      "Make local optimal choices",
+      "Never reconsider decisions",
+      "Simple and efficient"
+    ],
+    "examples": [
+      "Huffman coding",
+      "Dijkstra's algorithm",
+      "Kruskal's algorithm",
+      "Activity selection problem"
+    ],
+    "limitations": [
+      "May not always find the global optimum",
+      "Requires careful problem formulation"
+    ],
+    "order_num": 12,
+    "category": "dsa"
+  },
+  {
+    "id": "dynamic_programming",
+    "name": "Dynamic Programming",
+    "level": "advanced",
+    "description": "A method for solving complex problems by breaking them down into simpler subproblems and storing the results to avoid redundant computation.",
+    "characteristics": [
+      "Optimal substructure",
+      "Overlapping subproblems",
+      "Memoization",
+      "Tabulation"
+    ],
+    "use_cases": [
+      "Fibonacci sequence",
+      "Shortest path algorithms",
+      "Knapsack problem",
+      "Sequence alignment"
+    ],
+    "classic_problems": [
+      "Longest Common Subsequence",
+      "0/1 Knapsack",
+      "Matrix Chain Multiplication",
+      "Edit Distance",
+      "Coin Change"
+    ],
+    "order_num": 13,
+    "category": "dsa"
+  },
+  {
+    "id": "backtracking",
+    "name": "Backtracking",
+    "level": "advanced",
+    "description": "An algorithmic technique that builds a solution incrementally, abandoning a candidate (backtracking) as soon as it determines the candidate cannot lead to a valid solution.",
+    "characteristics": [
+      "Depth-first search approach",
+      "Pruning invalid paths",
+      "Recursion-based"
+    ],
+    "examples": [
+      "N-Queens Problem",
+      "Sudoku solver",
+      "Hamiltonian Path",
+      "Subset Sum",
+      "Graph Coloring"
+    ],
+    "time_complexity": "Often exponential O(b^d) where b is branching factor and d is solution depth",
+    "order_num": 14,
+    "category": "dsa"
+  },
+  {
+    "id": "recursion",
+    "name": "Recursion",
+    "level": "beginner",
+    "description": "Recursion is a technique where a function calls itself to solve smaller instances of the same problem.",
+    "time_complexity": "Varies based on the specific algorithm",
+    "space_complexity": "O(n) for the call stack in most cases",
+    "use_cases": [
+      "Tree traversals",
+      "Divide and conquer algorithms",
+      "Backtracking",
+      "Dynamic programming"
+    ],
+    "order_num": 17,
+    "category": "dsa"
+  },
+  {
+    "id": "strings",
+    "name": "String Algorithms",
+    "level": "beginner",
+    "description": "Algorithms that process and manipulate text or string data efficiently.",
+    "time_complexity": {
+      "basic_operations": "O(1) to O(n)",
+      "pattern_matching": "O(n+m) using KMP or Boyer-Moore"
+    },
+    "space_complexity": "O(n) in most cases",
+    "use_cases": [
+      "Text processing",
+      "Pattern matching",
+      "Compression",
+      "Spelling correction"
+    ],
+    "order_num": 18,
+    "category": "dsa"
+  },
+  {
+    "id": "two_pointers",
+    "name": "Two Pointers Technique",
+    "level": "beginner",
+    "description": "A technique that uses two pointers to iterate through a data structure, often moving in tandem or towards each other.",
+    "time_complexity": "Usually O(n)",
+    "space_complexity": "O(1) as it uses only two pointers",
+    "use_cases": [
+      "Finding pairs in sorted arrays",
+      "Palindrome checking",
+      "Cyclic detection",
+      "Sliding window problems"
+    ],
+    "order_num": 19,
+    "category": "dsa"
+  },
+  {
+    "id": "sliding_window",
+    "name": "Sliding Window",
+    "level": "beginner",
+    "description": "A technique that involves maintaining a window of elements and sliding it through a larger data structure to solve problems efficiently.",
+    "time_complexity": "Usually O(n)",
+    "space_complexity": "O(1) to O(k) where k is window size",
+    "use_cases": [
+      "Substring problems",
+      "Maximum/minimum subarrays",
+      "String matching",
+      "Finding contiguous sequences"
+    ],
+    "order_num": 20,
+    "category": "dsa"
+  },
+  {
+    "id": "divide_and_conquer",
+    "name": "Divide and Conquer",
+    "level": "intermediate",
+    "description": "A paradigm that breaks a problem into smaller subproblems, solves them recursively, and combines their solutions to solve the original problem.",
+    "time_complexity": "Often O(n log n) but varies",
+    "characteristics": [
+      "Problem division",
+      "Recursive solution",
+      "Solution combination"
+    ],
+    "examples": [
+      "Merge sort",
+      "Quick sort",
+      "Binary search",
+      "Strassen's matrix multiplication"
+    ],
+    "order_num": 21,
+    "category": "dsa"
+  },
+  {
+    "id": "avl_trees",
+    "name": "AVL Trees",
+    "level": "intermediate",
+    "description": "Self-balancing binary search trees where the heights of the two child subtrees of any node differ by at most one.",
+    "time_complexity": {
+      "search": "O(log n)",
+      "insertion": "O(log n)",
+      "deletion": "O(log n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": [
+      "Databases",
+      "Priority queues",
+      "In-memory sorting",
+      "Sets and maps implementation"
+    ],
+    "order_num": 22,
+    "category": "dsa"
+  },
+  {
+    "id": "red_black_trees",
+    "name": "Red-Black Trees",
+    "level": "intermediate",
+    "description": "Self-balancing binary search trees with an extra bit of information (color) per node, used to ensure the tree remains approximately balanced.",
+    "time_complexity": {
+      "search": "O(log n)",
+      "insertion": "O(log n)",
+      "deletion": "O(log n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": [
+      "Implementing maps and sets",
+      "Java's TreeMap and TreeSet",
+      "Linux kernel's process scheduling"
+    ],
+    "order_num": 23,
+    "category": "dsa"
+  },
+  {
+    "id": "disjoint_set",
+    "name": "Disjoint Set (Union Find)",
+    "level": "intermediate",
+    "description": "A data structure that keeps track of a set of elements partitioned into a number of disjoint (non-overlapping) subsets.",
+    "time_complexity": {
+      "find": "O(\u03b1(n)) amortized with path compression",
+      "union": "O(\u03b1(n)) amortized with union by rank"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": [
+      "Kruskal's algorithm for MST",
+      "Detecting cycles in graphs",
+      "Finding connected components",
+      "Online connectivity problems"
+    ],
+    "order_num": 24,
+    "category": "dsa"
+  },
+  {
+    "id": "topological_sort",
+    "name": "Topological Sort",
+    "level": "advanced",
+    "description": "An algorithm for ordering the vertices of a directed acyclic graph (DAG) such that for every directed edge (u, v), vertex u comes before v in the ordering.",
+    "time_complexity": "O(V + E) where V is vertices and E is edges",
+    "space_complexity": "O(V)",
+    "use_cases": [
+      "Scheduling jobs",
+      "Course prerequisites",
+      "Symbol dependencies in linkers",
+      "Task ordering"
+    ],
+    "order_num": 25,
+    "category": "dsa"
+  },
+  {
+    "id": "segment_trees",
+    "name": "Segment Trees",
+    "level": "advanced",
+    "description": "A tree data structure used for storing information about intervals, or segments, allowing querying which of the stored segments contain a given point.",
+    "time_complexity": {
+      "build": "O(n)",
+      "query": "O(log n)",
+      "update": "O(log n)"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": [
+      "Range queries",
+      "Finding minimum/maximum",
+      "Sum queries",
+      "Lazy propagation for range updates"
+    ],
+    "order_num": 26,
+    "category": "dsa"
+  },
+  {
+    "id": "suffix_arrays",
+    "name": "Suffix Arrays and Trees",
+    "level": "advanced",
+    "description": "Data structures that represent the suffixes of a string, sorted lexicographically, enabling efficient string operations.",
+    "time_complexity": {
+      "construction": "O(n log n) for suffix arrays, O(n) for suffix trees",
+      "pattern_matching": "O(m log n) for suffix arrays, O(m) for suffix trees"
+    },
+    "space_complexity": "O(n)",
+    "use_cases": [
+      "Pattern matching",
+      "Longest common substring",
+      "Genome sequence analysis",
+      "Data compression"
+    ],
+    "order_num": 27,
+    "category": "dsa"
+  },
+  {
+    "id": "bit_manipulation",
+    "name": "Bit Manipulation",
+    "level": "intermediate",
+    "description": "Techniques for manipulating data at the bit level, which can lead to efficient algorithms for certain problems.",
+    "operations": [
+      "AND",
+      "OR",
+      "XOR",
+      "NOT",
+      "Shift left",
+      "Shift right"
+    ],
+    "common_techniques": [
+      "Check if a bit is set: (num & (1 << pos))",
+      "Set a bit: (num | (1 << pos))",
+      "Clear a bit: (num & ~(1 << pos))",
+      "Toggle a bit: (num ^ (1 << pos))",
+      "Count set bits: Brian Kernighan's Algorithm"
+    ],
+    "use_cases": [
+      "Compression",
+      "Cryptography",
+      "Low-level system programming",
+      "Optimization problems"
+    ],
+    "order_num": 15,
+    "category": "dsa"
+  },
+  {
+    "id": "trie",
+    "name": "Trie (Prefix Tree)",
+    "level": "advanced",
+    "description": "A tree-like data structure used to store a dynamic set of strings, where keys are usually strings. Particularly efficient for dictionary operations.",
+    "time_complexity": {
+      "search": "O(m) where m is the length of the key",
+      "insertion": "O(m)",
+      "deletion": "O(m)"
+    },
+    "space_complexity": "O(ALPHABET_SIZE * m * n) where n is number of keys",
+    "use_cases": [
+      "Autocomplete suggestions",
+      "Spell checking",
+      "IP routing (longest prefix matching)",
+      "T9 predictive text"
+    ],
+    "order_num": 16,
+    "category": "dsa"
+  },
+  {
+    "id": "system_design_fundamentals",
+    "name": "System Design Fundamentals",
+    "level": "beginner",
+    "description": "Core concepts and principles that form the foundation of system design.",
+    "components": [
+      "Requirements analysis",
+      "Architectural patterns",
+      "Performance considerations",
+      "Scalability principles",
+      "Reliability"
+    ],
+    "order_num": 1,
+    "category": "system_design"
+  },
+  {
+    "id": "scalability",
+    "name": "Scalability",
+    "level": "beginner",
+    "description": "Approaches to handle increasing loads and growing user bases.",
+    "components": [
+      "Horizontal scaling",
+      "Vertical scaling",
+      "Load balancing",
+      "Database sharding",
+      "Caching strategies"
+    ],
+    "principles": [
+      "Design with scaling in mind from the beginning",
+      "Identify potential bottlenecks early",
+      "Break monolithic services into smaller services",
+      "Use stateless services when possible",
+      "Implement asynchronous processing"
+    ],
+    "case_studies": [
+      "Netflix scalability",
+      "Twitter's timeline architecture",
+      "Instagram's feed generation"
+    ],
+    "order_num": 2,
+    "category": "system_design"
+  },
+  {
+    "id": "load_balancing",
+    "name": "Load Balancing",
+    "level": "beginner",
+    "description": "Techniques for distributing traffic across multiple servers or resources.",
+    "components": [
+      "Round Robin",
+      "Least Connections",
+      "Resource-based",
+      "Hardware vs Software load balancers",
+      "DNS load balancing"
+    ],
+    "strategies": [
+      "Layer 4 (Transport) load balancing",
+      "Layer 7 (Application) load balancing",
+      "Global server load balancing",
+      "Sticky sessions",
+      "Health checks"
+    ],
+    "tools": [
+      "NGINX",
+      "HAProxy",
+      "AWS ELB",
+      "Google Cloud Load Balancing",
+      "Kubernetes Ingress"
+    ],
+    "order_num": 3,
+    "category": "system_design"
+  },
+  {
+    "id": "caching",
+    "name": "Caching",
+    "level": "intermediate",
+    "description": "Storing frequently accessed data in a high-speed storage layer to reduce latency and load on backend systems.",
+    "types": [
+      "In-memory caching",
+      "CDN caching",
+      "Database caching",
+      "Application caching",
+      "Browser caching"
+    ],
+    "strategies": [
+      "Cache-aside (Lazy loading)",
+      "Write-through",
+      "Write-behind (Write-back)",
+      "Refresh-ahead"
+    ],
+    "eviction_policies": [
+      "LRU (Least Recently Used)",
+      "LFU (Least Frequently Used)",
+      "FIFO (First In First Out)",
+      "TTL (Time To Live)"
+    ],
+    "tools": [
+      "Redis",
+      "Memcached",
+      "Varnish",
+      "Cloudflare",
+      "Akamai"
+    ],
+    "challenges": [
+      "Cache invalidation",
+      "Cache consistency",
+      "Cache stampede",
+      "Cold start"
+    ],
+    "order_num": 4,
+    "category": "system_design"
+  },
+  {
+    "id": "database_design",
+    "name": "Database Design",
+    "level": "intermediate",
+    "description": "Approaches to designing efficient, reliable, and scalable database systems.",
+    "components": [
+      "Relational vs NoSQL",
+      "Database normalization",
+      "Indexing strategies",
+      "Partitioning and sharding",
+      "Replication"
+    ],
+    "relational_concepts": [
+      "ACID properties",
+      "Normal forms",
+      "Transactions",
+      "Constraints and referential integrity",
+      "Query optimization"
+    ],
+    "nosql_types": [
+      "Document stores (MongoDB, Firestore)",
+      "Key-value stores (Redis, DynamoDB)",
+      "Column-family stores (Cassandra, HBase)",
+      "Graph databases (Neo4j, Amazon Neptune)"
+    ],
+    "scaling_strategies": [
+      "Master-slave replication",
+      "Master-master replication",
+      "Sharding approaches",
+      "Connection pooling",
+      "Read replicas"
+    ],
+    "order_num": 5,
+    "category": "system_design"
+  },
+  {
+    "id": "microservices",
+    "name": "Microservices Architecture",
+    "level": "intermediate",
+    "description": "Design patterns for building applications as suites of independently deployable services.",
+    "components": [
+      "Service boundaries",
+      "API design",
+      "Service discovery",
+      "Containerization",
+      "Orchestration"
+    ],
+    "principles": [
+      "Single responsibility",
+      "Decentralized data management",
+      "Design for failure",
+      "Evolutionary design",
+      "Infrastructure automation"
+    ],
+    "patterns": [
+      "API Gateway",
+      "Circuit Breaker",
+      "CQRS (Command Query Responsibility Segregation)",
+      "Event Sourcing",
+      "Saga Pattern"
+    ],
+    "challenges": [
+      "Distributed transactions",
+      "Service discovery",
+      "Deployment complexity",
+      "Monitoring and debugging",
+      "Testing"
+    ],
+    "tools": [
+      "Docker",
+      "Kubernetes",
+      "Istio",
+      "Consul",
+      "Prometheus"
+    ],
+    "order_num": 6,
+    "category": "system_design"
+  },
+  {
+    "id": "api_design",
+    "name": "API Design",
+    "level": "intermediate",
+    "description": "Principles and practices for designing robust, usable, and maintainable APIs.",
+    "styles": [
+      "REST (Representational State Transfer)",
+      "GraphQL",
+      "gRPC",
+      "SOAP",
+      "WebSockets"
+    ],
+    "principles": [
+      "Clear resource naming",
+      "Consistent response structures",
+      "Proper HTTP method usage",
+      "Versioning strategy",
+      "Error handling",
+      "Authentication and authorization",
+      "Rate limiting"
+    ],
+    "documentation": [
+      "OpenAPI/Swagger",
+      "API Blueprint",
+      "RAML"
+    ],
+    "security_practices": [
+      "OAuth 2.0",
+      "JWT (JSON Web Tokens)",
+      "API keys",
+      "Input validation",
+      "HTTPS/TLS"
+    ],
+    "order_num": 7,
+    "category": "system_design"
+  },
+  {
+    "id": "message_queues",
+    "name": "Message Queues and Event-Driven Architecture",
+    "level": "intermediate",
+    "description": "Systems that enable asynchronous communication between services through message passing.",
+    "patterns": [
+      "Publish-Subscribe",
+      "Point-to-Point",
+      "Request-Reply",
+      "Competing Consumers"
+    ],
+    "tools": [
+      "Apache Kafka",
+      "RabbitMQ",
+      "AWS SQS",
+      "Google Cloud Pub/Sub",
+      "Azure Service Bus"
+    ],
+    "considerations": [
+      "Message ordering",
+      "Delivery guarantees",
+      "Idempotency",
+      "Message schema evolution",
+      "Dead letter queues"
+    ],
+    "use_cases": [
+      "Decoupling services",
+      "Workload distribution",
+      "Event sourcing",
+      "Data integration",
+      "Backend processing"
+    ],
+    "order_num": 8,
+    "category": "system_design"
+  },
+  {
+    "id": "distributed_systems",
+    "name": "Distributed Systems",
+    "level": "advanced",
+    "description": "Techniques for designing resilient systems across multiple machines or locations.",
+    "components": [
+      "Consistency models",
+      "CAP theorem",
+      "Distributed transactions",
+      "Fault tolerance",
+      "Consensus algorithms"
+    ],
+    "challenges": [
+      "Network partitions",
+      "Clock synchronization",
+      "Distributed deadlocks",
+      "Split-brain problems",
+      "Data consistency"
+    ],
+    "algorithms": [
+      "Paxos",
+      "Raft",
+      "Two-Phase Commit",
+      "Gossip protocol",
+      "Vector clocks"
+    ],
+    "patterns": [
+      "Eventual consistency",
+      "Quorum-based systems",
+      "Leader election",
+      "Sharding",
+      "Replication"
+    ],
+    "order_num": 9,
+    "category": "system_design"
+  },
+  {
+    "id": "cloud_native",
+    "name": "Cloud-Native Design",
+    "level": "advanced",
+    "description": "Principles and practices for building applications optimized for cloud environments.",
+    "principles": [
+      "Design for self-healing",
+      "Elastic scaling",
+      "Infrastructure as code",
+      "Containerization",
+      "Immutable infrastructure"
+    ],
+    "technologies": [
+      "Containers (Docker)",
+      "Orchestration (Kubernetes)",
+      "Service mesh (Istio, Linkerd)",
+      "Serverless computing",
+      "Platform as a Service (PaaS)"
+    ],
+    "patterns": [
+      "Sidecar pattern",
+      "Ambassador pattern",
+      "Circuit breaker pattern",
+      "Bulkhead pattern",
+      "Throttling pattern"
+    ],
+    "observability": [
+      "Monitoring",
+      "Logging",
+      "Tracing",
+      "Metrics collection",
+      "Alerting"
+    ],
+    "providers": [
+      "AWS",
+      "Google Cloud Platform",
+      "Microsoft Azure",
+      "Digital Ocean",
+      "IBM Cloud"
+    ],
+    "order_num": 10,
+    "category": "system_design"
+  },
+  {
+    "id": "security_design",
+    "name": "Security Design",
+    "level": "advanced",
+    "description": "Principles and practices for designing secure distributed systems.",
+    "principles": [
+      "Defense in depth",
+      "Principle of least privilege",
+      "Secure by design",
+      "Zero trust architecture",
+      "Fail securely"
+    ],
+    "components": [
+      "Authentication",
+      "Authorization",
+      "Encryption",
+      "Key management",
+      "Identity management",
+      "Secure communication",
+      "Vulnerability management"
+    ],
+    "attack_vectors": [
+      "Injection attacks",
+      "Cross-site scripting (XSS)",
+      "Cross-site request forgery (CSRF)",
+      "Denial of service (DoS)",
+      "Man-in-the-middle attacks"
+    ],
+    "compliance": [
+      "GDPR",
+      "HIPAA",
+      "PCI DSS",
+      "SOC 2",
+      "ISO 27001"
+    ],
+    "best_practices": [
+      "Regular security audits",
+      "Penetration testing",
+      "Security code reviews",
+      "Dependency scanning",
+      "Security monitoring"
+    ],
+    "order_num": 11,
+    "category": "system_design"
+  },
+  {
+    "id": "system_design_interview",
+    "name": "System Design Interview Preparation",
+    "level": "intermediate",
+    "description": "A structured approach to solving system design interview questions.",
+    "steps": [
+      "Requirements clarification",
+      "System interface definition",
+      "Back-of-the-envelope estimation",
+      "System API design",
+      "Data model",
+      "High-level design",
+      "Detailed design",
+      "Bottlenecks identification and resolution"
+    ],
+    "common_questions": [
+      "Design a URL shortener",
+      "Design a social media feed",
+      "Design a distributed file storage service",
+      "Design a ride-sharing service",
+      "Design a notification system"
+    ],
+    "key_strategies": [
+      "Start with simple designs and iterate",
+      "Focus on the core functionality first",
+      "Understand the tradeoffs of each component",
+      "Be clear about the assumptions you're making",
+      "Address scalability from the beginning"
+    ],
+    "evaluation_criteria": [
+      "Functional completeness",
+      "Scalability",
+      "Performance",
+      "Reliability",
+      "Maintainability"
+    ],
+    "order_num": 12,
+    "category": "system_design"
+  },
+  {
+    "id": "cap_theorem",
+    "name": "CAP Theorem",
+    "level": "beginner",
+    "description": "The CAP theorem states that a distributed database system can only guarantee two of the following three properties simultaneously: Consistency, Availability, and Partition Tolerance.",
+    "components": [
+      "Consistency: All nodes see the same data at the same time",
+      "Availability: Every request receives a response, without guarantee of it containing the most recent data",
+      "Partition Tolerance: The system continues to operate despite network partitions"
+    ],
+    "systems": [
+      "CP systems: Choose consistency over availability (e.g., MongoDB, HBase)",
+      "AP systems: Choose availability over consistency (e.g., Cassandra, DynamoDB)",
+      "CA systems: Cannot exist in realistic distributed environments"
+    ],
+    "order_num": 13,
+    "category": "system_design"
+  },
+  {
+    "id": "rest_api",
+    "name": "RESTful API Design",
+    "level": "beginner",
+    "description": "REST (Representational State Transfer) is an architectural style for designing networked applications, emphasizing simplicity, scalability, and a stateless architecture.",
+    "principles": [
+      "Client-Server architecture",
+      "Statelessness",
+      "Cacheability",
+      "Uniform interface",
+      "Layered system",
+      "Code on demand (optional)"
+    ],
+    "http_methods": [
+      "GET: Retrieve a resource",
+      "POST: Create a new resource",
+      "PUT: Update an existing resource",
+      "DELETE: Remove a resource",
+      "PATCH: Partially update a resource"
+    ],
+    "order_num": 14,
+    "category": "system_design"
+  },
+  {
+    "id": "containers_orchestration",
+    "name": "Containers and Orchestration",
+    "level": "beginner",
+    "description": "Containers package software and its dependencies for consistent deployment, while orchestration tools manage these containers at scale.",
+    "components": [
+      "Containers (Docker)",
+      "Container registries",
+      "Orchestration (Kubernetes, Docker Swarm)",
+      "Service mesh",
+      "Container networking"
+    ],
+    "benefits": [
+      "Isolation",
+      "Portability",
+      "Efficient resource usage",
+      "Faster deployment",
+      "Scalability and fault tolerance"
+    ],
+    "order_num": 15,
+    "category": "system_design"
+  },
+  {
+    "id": "fault_tolerance",
+    "name": "Fault Tolerance",
+    "level": "intermediate",
+    "description": "The ability of a system to continue operating properly in the event of the failure of some of its components.",
+    "strategies": [
+      "Redundancy",
+      "Failover mechanisms",
+      "Circuit breakers",
+      "Bulkheads",
+      "Timeouts and retries"
+    ],
+    "patterns": [
+      "Active-Passive replication",
+      "Active-Active replication",
+      "Hot standby",
+      "Warm standby",
+      "Cold standby"
+    ],
+    "order_num": 16,
+    "category": "system_design"
+  },
+  {
+    "id": "data_replication",
+    "name": "Data Replication",
+    "level": "intermediate",
+    "description": "The process of storing data in multiple locations to improve reliability, fault-tolerance, and accessibility.",
+    "replication_models": [
+      "Single-master (primary-replica)",
+      "Multi-master",
+      "Chain replication",
+      "Quorum-based replication"
+    ],
+    "consistency_models": [
+      "Strong consistency",
+      "Eventual consistency",
+      "Causal consistency",
+      "Sequential consistency"
+    ],
+    "challenges": [
+      "Conflict resolution",
+      "Replication lag",
+      "Split-brain scenarios",
+      "Network partitions"
+    ],
+    "order_num": 17,
+    "category": "system_design"
+  },
+  {
+    "id": "monitoring_logging",
+    "name": "Monitoring and Logging",
+    "level": "intermediate",
+    "description": "The practice of collecting, analyzing, and using information about the operational state and behavior of systems.",
+    "components": [
+      "Metrics collection",
+      "Log aggregation",
+      "Alerting systems",
+      "Dashboards",
+      "Tracing"
+    ],
+    "tools": [
+      "Prometheus (metrics)",
+      "Grafana (visualization)",
+      "ELK Stack (logging)",
+      "Jaeger/Zipkin (tracing)",
+      "Datadog/New Relic (APM)"
+    ],
+    "best_practices": [
+      "Monitor the Four Golden Signals: latency, traffic, errors, saturation",
+      "Set actionable alerts",
+      "Implement structured logging",
+      "Use distributed tracing for complex systems",
+      "Establish baseline metrics"
+    ],
+    "order_num": 18,
+    "category": "system_design"
+  },
+  {
+    "id": "consensus_algorithms",
+    "name": "Consensus Algorithms",
+    "level": "advanced",
+    "description": "Algorithms that enable distributed systems to agree on a single data value or system state, despite potential failures.",
+    "algorithms": [
+      "Paxos: Classic consensus algorithm",
+      "Raft: Designed for understandability",
+      "Zab: Used in ZooKeeper",
+      "PBFT (Practical Byzantine Fault Tolerance)",
+      "Gossip protocols"
+    ],
+    "applications": [
+      "Leader election",
+      "Distributed locks",
+      "Configuration management",
+      "Distributed transactions",
+      "State machine replication"
+    ],
+    "order_num": 19,
+    "category": "system_design"
+  },
+  {
+    "id": "eventual_consistency",
+    "name": "Eventual Consistency",
+    "level": "advanced",
+    "description": "A consistency model where, given enough time without updates, all replicas of data will converge to the same state.",
+    "characteristics": [
+      "High availability",
+      "Partition tolerance",
+      "Low latency for writes",
+      "Temporary inconsistencies are acceptable",
+      "Conflict resolution is necessary"
+    ],
+    "techniques": [
+      "Vector clocks",
+      "Conflict-free replicated data types (CRDTs)",
+      "Operational transforms",
+      "Last-writer-wins",
+      "Application-specific conflict resolution"
+    ],
+    "use_cases": [
+      "Social media platforms",
+      "Shopping carts",
+      "Collaborative editing",
+      "DNS systems",
+      "NoSQL databases"
+    ],
+    "order_num": 20,
+    "category": "system_design"
+  },
+  {
+    "id": "search_systems",
+    "name": "Search System Design",
+    "level": "advanced",
+    "description": "The architecture and implementation of systems for efficiently searching and retrieving information from large datasets.",
+    "components": [
+      "Inverted indexes",
+      "Document processing pipeline",
+      "Query processing",
+      "Ranking algorithms",
+      "Relevance scoring"
+    ],
+    "techniques": [
+      "TF-IDF (Term Frequency-Inverse Document Frequency)",
+      "Vector space models",
+      "Sharding and partitioning",
+      "Caching",
+      "Query expansion and suggestion"
+    ],
+    "technologies": [
+      "Elasticsearch",
+      "Solr",
+      "Lucene",
+      "Algolia",
+      "Meilisearch"
+    ],
+    "order_num": 21,
+    "category": "system_design"
+  },
+  {
+    "id": "calculus_limits",
+    "name": "Limits",
+    "level": "beginner",
+    "subcategory": "calculus",
+    "description": "Limits describe the behavior of a function as its input approaches a particular value.",
+    "key_formulas": [
+      "Definition: lim(x\u2192a) f(x) = L means that for every \u03b5 > 0, there exists \u03b4 > 0 such that |f(x) - L| < \u03b5 whenever 0 < |x - a| < \u03b4",
+      "lim(x\u2192a) k = k (Constants)",
+      "lim(x\u2192a) x = a (Identity)",
+      "lim(x\u2192a) [f(x) + g(x)] = lim(x\u2192a) f(x) + lim(x\u2192a) g(x) (Sum Rule)",
+      "lim(x\u2192a) [f(x) \u00d7 g(x)] = lim(x\u2192a) f(x) \u00d7 lim(x\u2192a) g(x) (Product Rule)"
+    ],
+    "applications": [
+      "Calculating derivatives",
+      "Finding asymptotes",
+      "Evaluating indeterminate forms",
+      "Analyzing function behavior"
+    ],
+    "common_techniques": [
+      "Direct substitution",
+      "Factoring and simplifying",
+      "Rationalization",
+      "L'H\u00f4pital's rule for indeterminate forms"
+    ],
+    "order_num": 1,
+    "category": "math"
+  },
+  {
+    "id": "calculus_derivatives",
+    "name": "Derivatives",
+    "level": "beginner",
+    "subcategory": "calculus",
+    "description": "Derivatives measure the rate of change of a function with respect to one of its variables.",
+    "key_formulas": [
+      "Definition: f'(x) = lim(h\u21920) [f(x+h) - f(x)]/h",
+      "Power Rule: d/dx [x^n] = n\u00d7x^(n-1)",
+      "Product Rule: d/dx [f(x)\u00d7g(x)] = f'(x)\u00d7g(x) + f(x)\u00d7g'(x)",
+      "Chain Rule: d/dx [f(g(x))] = f'(g(x))\u00d7g'(x)",
+      "Quotient Rule: d/dx [f(x)/g(x)] = [f'(x)\u00d7g(x) - f(x)\u00d7g'(x)]/[g(x)]^2"
+    ],
+    "applications": [
+      "Rate of change problems",
+      "Optimization (finding maxima and minima)",
+      "Related rates",
+      "Curve sketching",
+      "Motion analysis (velocity and acceleration)"
+    ],
+    "order_num": 2,
+    "category": "math"
+  },
+  {
+    "id": "calculus_integrals",
+    "name": "Integrals",
+    "level": "intermediate",
+    "subcategory": "calculus",
+    "description": "Integrals represent the accumulation of quantities and are the inverse operation of differentiation.",
+    "key_formulas": [
+      "Indefinite integral: \u222bf(x)dx = F(x) + C, where F'(x) = f(x)",
+      "Definite integral: \u222b[a,b]f(x)dx = F(b) - F(a), where F'(x) = f(x)",
+      "Fundamental Theorem of Calculus: d/dx[\u222b[a,x]f(t)dt] = f(x)",
+      "Integration by parts: \u222bu(x)v'(x)dx = u(x)v(x) - \u222bv(x)u'(x)dx",
+      "Integration by substitution: \u222bf(g(x))g'(x)dx = \u222bf(u)du, where u = g(x)"
+    ],
+    "applications": [
+      "Area calculations",
+      "Volume calculations",
+      "Work and energy in physics",
+      "Probability distributions",
+      "Solving differential equations"
+    ],
+    "integration_techniques": [
+      "Substitution (u-substitution)",
+      "Integration by parts",
+      "Partial fractions",
+      "Trigonometric substitutions",
+      "Numerical integration (trapezoidal rule, Simpson's rule)"
+    ],
+    "order_num": 3,
+    "category": "math"
+  },
+  {
+    "id": "calculus_series",
+    "name": "Infinite Series",
+    "level": "advanced",
+    "subcategory": "calculus",
+    "description": "Infinite series are the sum of infinitely many terms that follow a specific pattern.",
+    "key_concepts": [
+      "Sequence: an ordered list of numbers a\u2081, a\u2082, a\u2083, ...",
+      "Series: the sum of a sequence, S = a\u2081 + a\u2082 + a\u2083 + ...",
+      "Convergence: when the sum approaches a fixed value",
+      "Divergence: when the sum does not approach a fixed value"
+    ],
+    "convergence_tests": [
+      "Geometric series: \u2211r^n converges to 1/(1-r) when |r| < 1",
+      "p-series: \u2211(1/n^p) converges when p > 1",
+      "Comparison test",
+      "Ratio test",
+      "Integral test",
+      "Alternating series test"
+    ],
+    "special_series": [
+      "Taylor series: f(x) = f(a) + f'(a)(x-a)/1! + f''(a)(x-a)\u00b2/2! + ...",
+      "Maclaurin series (Taylor series at a=0)",
+      "Fourier series: representing periodic functions using sine and cosine"
+    ],
+    "applications": [
+      "Function approximation",
+      "Solving differential equations",
+      "Physics (wave phenomena)",
+      "Signal processing",
+      "Error estimation"
+    ],
+    "order_num": 4,
+    "category": "math"
+  },
+  {
+    "id": "linear_algebra_vectors",
+    "name": "Vectors",
+    "level": "beginner",
+    "subcategory": "linear_algebra",
+    "description": "Vectors are mathematical objects that have both magnitude and direction, fundamental to linear algebra.",
+    "key_formulas": [
+      "Vector addition: v + w = (v\u2081+w\u2081, v\u2082+w\u2082, ..., v\u2099+w\u2099)",
+      "Scalar multiplication: c\u00b7v = (c\u00b7v\u2081, c\u00b7v\u2082, ..., c\u00b7v\u2099)",
+      "Dot product: v\u00b7w = v\u2081w\u2081 + v\u2082w\u2082 + ... + v\u2099w\u2099",
+      "Magnitude: |v| = \u221a(v\u2081\u00b2 + v\u2082\u00b2 + ... + v\u2099\u00b2)",
+      "Cross product (3D): v\u00d7w = (v\u2082w\u2083-v\u2083w\u2082, v\u2083w\u2081-v\u2081w\u2083, v\u2081w\u2082-v\u2082w\u2081)"
+    ],
+    "properties": [
+      "Dot product is commutative: v\u00b7w = w\u00b7v",
+      "Dot product with orthogonal vectors equals zero",
+      "Cross product is anticommutative: v\u00d7w = -(w\u00d7v)",
+      "Cross product of parallel vectors equals zero"
+    ],
+    "applications": [
+      "Physics (force, velocity, acceleration)",
+      "Computer graphics",
+      "Machine learning (feature vectors)",
+      "Robotics (orientation and movement)",
+      "Quantum mechanics"
+    ],
+    "order_num": 5,
+    "category": "math"
+  },
+  {
+    "id": "linear_algebra_matrices",
+    "name": "Matrices",
+    "level": "intermediate",
+    "subcategory": "linear_algebra",
+    "description": "Matrices are rectangular arrays of numbers, symbols, or expressions arranged in rows and columns.",
+    "key_operations": [
+      "Addition: (A + B)\u1d62\u2c7c = A\u1d62\u2c7c + B\u1d62\u2c7c",
+      "Scalar multiplication: (cA)\u1d62\u2c7c = c \u00d7 A\u1d62\u2c7c",
+      "Matrix multiplication: (AB)\u1d62\u2c7c = \u2211 A\u1d62\u2096 \u00d7 B\u2096\u2c7c",
+      "Transpose: (A\u1d40)\u1d62\u2c7c = A\u2c7c\u1d62",
+      "Determinant: measure of scaling factor of linear transformation"
+    ],
+    "matrix_types": [
+      "Identity matrix: I",
+      "Zero matrix: 0",
+      "Diagonal matrix: non-zero elements only on diagonal",
+      "Symmetric matrix: A = A\u1d40",
+      "Orthogonal matrix: A\u207b\u00b9 = A\u1d40",
+      "Singular matrix: det(A) = 0"
+    ],
+    "applications": [
+      "Linear transformations",
+      "Solving systems of linear equations",
+      "Computer graphics (translations, rotations, scaling)",
+      "Markov chains",
+      "Graph representation",
+      "Machine learning algorithms"
+    ],
+    "order_num": 6,
+    "category": "math"
+  },
+  {
+    "id": "linear_algebra_eigen",
+    "name": "Eigenvalues and Eigenvectors",
+    "level": "advanced",
+    "subcategory": "linear_algebra",
+    "description": "Eigenvalues and eigenvectors are values and vectors that remain in the same direction when a linear transformation is applied.",
+    "key_concepts": [
+      "Eigenvector equation: Av = \u03bbv",
+      "Eigenvalue: \u03bb in the equation Av = \u03bbv",
+      "Characteristic polynomial: det(A - \u03bbI) = 0",
+      "Eigenspace: the set of all eigenvectors with a given eigenvalue",
+      "Diagonalization: A = PDP\u207b\u00b9 where D is diagonal and P contains eigenvectors"
+    ],
+    "properties": [
+      "The sum of eigenvalues equals the trace of the matrix",
+      "The product of eigenvalues equals the determinant",
+      "Symmetric matrices have real eigenvalues",
+      "Similar matrices have the same eigenvalues"
+    ],
+    "applications": [
+      "Principal Component Analysis (PCA)",
+      "Quantum mechanics",
+      "Stability analysis in differential equations",
+      "Google's PageRank algorithm",
+      "Vibration analysis in engineering"
+    ],
+    "order_num": 7,
+    "category": "math"
+  },
+  {
+    "id": "statistics_descriptive",
+    "name": "Descriptive Statistics",
+    "level": "beginner",
+    "subcategory": "statistics",
+    "description": "Descriptive statistics summarize and describe the main features of a collection of data.",
+    "key_formulas": [
+      "Mean: \u03bc = (\u2211x)/n",
+      "Median: middle value of ordered data set",
+      "Mode: most frequent value in data set",
+      "Range: max value - min value",
+      "Variance: \u03c3\u00b2 = \u2211(x-\u03bc)\u00b2/n",
+      "Standard Deviation: \u03c3 = \u221a(\u03c3\u00b2)"
+    ],
+    "measures_of_central_tendency": [
+      "Arithmetic mean",
+      "Geometric mean",
+      "Harmonic mean",
+      "Median",
+      "Mode"
+    ],
+    "measures_of_dispersion": [
+      "Range",
+      "Interquartile range (IQR)",
+      "Variance",
+      "Standard deviation",
+      "Coefficient of variation"
+    ],
+    "data_visualization": [
+      "Histograms",
+      "Box plots",
+      "Scatter plots",
+      "Bar charts",
+      "Pie charts"
+    ],
+    "order_num": 8,
+    "category": "math"
+  },
+  {
+    "id": "statistics_probability",
+    "name": "Probability Theory",
+    "level": "intermediate",
+    "subcategory": "statistics",
+    "description": "Probability theory is the branch of mathematics concerned with probability, the analysis of random phenomena.",
+    "key_concepts": [
+      "Sample space: the set of all possible outcomes",
+      "Event: a subset of the sample space",
+      "Probability function: P(A) maps events to values between 0 and 1",
+      "Conditional probability: P(A|B) = P(A\u2229B)/P(B)",
+      "Independence: P(A\u2229B) = P(A)\u00d7P(B)"
+    ],
+    "probability_rules": [
+      "Addition rule: P(A\u222aB) = P(A) + P(B) - P(A\u2229B)",
+      "Multiplication rule: P(A\u2229B) = P(A)\u00d7P(B|A)",
+      "Complement rule: P(A') = 1 - P(A)",
+      "Bayes' theorem: P(A|B) = P(B|A)\u00d7P(A)/P(B)"
+    ],
+    "distributions": [
+      "Discrete: Bernoulli, Binomial, Poisson, Geometric",
+      "Continuous: Uniform, Normal, Exponential, Chi-square"
+    ],
+    "applications": [
+      "Risk assessment",
+      "Quality control",
+      "Machine learning",
+      "Genetics",
+      "Financial analysis"
+    ],
+    "order_num": 9,
+    "category": "math"
+  },
+  {
+    "id": "statistics_inference",
+    "name": "Statistical Inference",
+    "level": "advanced",
+    "subcategory": "statistics",
+    "description": "Statistical inference is the process of using data to make conclusions about a population parameter.",
+    "key_concepts": [
+      "Population: the entire group being studied",
+      "Sample: a subset of the population",
+      "Parameter: numerical characteristic of a population",
+      "Statistic: numerical characteristic of a sample",
+      "Sampling distribution: distribution of a statistic"
+    ],
+    "estimation_methods": [
+      "Point estimation",
+      "Interval estimation (confidence intervals)",
+      "Maximum likelihood estimation",
+      "Bayesian estimation"
+    ],
+    "hypothesis_testing": [
+      "Null hypothesis (H\u2080) and alternative hypothesis (H\u2081)",
+      "Type I error (rejecting a true H\u2080)",
+      "Type II error (failing to reject a false H\u2080)",
+      "p-value: probability of obtaining results as extreme as observed",
+      "Common tests: t-test, z-test, chi-square test, ANOVA, F-test"
+    ],
+    "applications": [
+      "Scientific research",
+      "Medical trials",
+      "Quality assurance",
+      "Market research",
+      "Economic forecasting"
+    ],
+    "order_num": 10,
+    "category": "math"
+  },
+  {
+    "id": "discrete_math_logic",
+    "name": "Logic and Proofs",
+    "level": "beginner",
+    "subcategory": "discrete_mathematics",
+    "description": "Mathematical logic focuses on formal reasoning and the structure of mathematical proofs.",
+    "key_concepts": [
+      "Proposition: statement that is either true or false",
+      "Logical operators: AND (\u2227), OR (\u2228), NOT (\u00ac), IMPLIES (\u2192), IFF (\u2194)",
+      "Truth tables: method for determining truth values of complex propositions",
+      "Predicate logic: extends propositional logic with quantifiers",
+      "Validity: an argument is valid if the conclusion follows from the premises"
+    ],
+    "proof_techniques": [
+      "Direct proof",
+      "Proof by contradiction",
+      "Proof by contrapositive",
+      "Mathematical induction",
+      "Proof by cases"
+    ],
+    "applications": [
+      "Computer program verification",
+      "Circuit design",
+      "Artificial intelligence",
+      "Database query languages",
+      "Formal specification of systems"
+    ],
+    "order_num": 11,
+    "category": "math"
+  },
+  {
+    "id": "discrete_math_sets",
+    "name": "Set Theory",
+    "level": "beginner",
+    "subcategory": "discrete_mathematics",
+    "description": "Set theory is the branch of mathematics that studies sets, which are collections of objects.",
+    "key_concepts": [
+      "Set: a collection of distinct objects",
+      "Element: an object in a set",
+      "Subset: A is a subset of B if every element of A is in B",
+      "Power set: set of all subsets of a given set",
+      "Cardinality: the number of elements in a set"
+    ],
+    "set_operations": [
+      "Union: A \u222a B = {x | x \u2208 A or x \u2208 B}",
+      "Intersection: A \u2229 B = {x | x \u2208 A and x \u2208 B}",
+      "Difference: A - B = {x | x \u2208 A and x \u2209 B}",
+      "Complement: A' = {x | x \u2209 A}",
+      "Cartesian product: A \u00d7 B = {(a,b) | a \u2208 A, b \u2208 B}"
+    ],
+    "properties": [
+      "Commutative laws: A \u222a B = B \u222a A, A \u2229 B = B \u2229 A",
+      "Associative laws: (A \u222a B) \u222a C = A \u222a (B \u222a C)",
+      "Distributive laws: A \u2229 (B \u222a C) = (A \u2229 B) \u222a (A \u2229 C)",
+      "De Morgan's laws: (A \u222a B)' = A' \u2229 B', (A \u2229 B)' = A' \u222a B'"
+    ],
+    "applications": [
+      "Database operations",
+      "Logic design",
+      "Venn diagrams",
+      "Programming (collections and arrays)",
+      "Probability theory"
+    ],
+    "order_num": 12,
+    "category": "math"
+  },
+  {
+    "id": "discrete_math_combinatorics",
+    "name": "Combinatorics",
+    "level": "intermediate",
+    "subcategory": "discrete_mathematics",
+    "description": "Combinatorics is the study of counting, arrangement, and combination of objects.",
+    "key_formulas": [
+      "Permutation (ordered arrangement): P(n,r) = n!/(n-r)!",
+      "Combination (unordered selection): C(n,r) = n!/[r!(n-r)!]",
+      "Permutation with repetition: n^r",
+      "Combination with repetition: C(n+r-1,r)",
+      "Binomial theorem: (x+y)^n = \u2211(k=0 to n) C(n,k) x^(n-k) y^k"
+    ],
+    "counting_principles": [
+      "Addition principle: |A \u222a B| = |A| + |B| - |A \u2229 B|",
+      "Multiplication principle: If task 1 has m ways and task 2 has n ways, then doing both has m\u00d7n ways",
+      "Inclusion-exclusion principle",
+      "Pigeonhole principle: if n+1 objects are placed in n boxes, at least one box has multiple objects"
+    ],
+    "applications": [
+      "Probability calculations",
+      "Algorithm analysis",
+      "Coding theory",
+      "Operations research",
+      "Game theory"
+    ],
+    "order_num": 13,
+    "category": "math"
+  },
+  {
+    "id": "discrete_math_graph_theory",
+    "name": "Graph Theory",
+    "level": "intermediate",
+    "subcategory": "discrete_mathematics",
+    "description": "Graph theory is the study of graphs, which are mathematical structures used to model pairwise relations between objects.",
+    "key_concepts": [
+      "Graph: a set of vertices connected by edges",
+      "Vertex (node): a fundamental unit of which graphs are formed",
+      "Edge: a connection between two vertices",
+      "Path: a sequence of edges connecting vertices",
+      "Cycle: a path that starts and ends at the same vertex"
+    ],
+    "graph_types": [
+      "Undirected graph: edges have no direction",
+      "Directed graph (digraph): edges have direction",
+      "Weighted graph: edges have weights or costs",
+      "Bipartite graph: vertices can be divided into two disjoint sets",
+      "Complete graph: every vertex is connected to every other vertex"
+    ],
+    "algorithms": [
+      "Breadth-first search (BFS)",
+      "Depth-first search (DFS)",
+      "Dijkstra's algorithm (shortest path)",
+      "Kruskal's algorithm (minimum spanning tree)",
+      "Topological sorting"
+    ],
+    "applications": [
+      "Network analysis",
+      "Social networks",
+      "Route optimization",
+      "Scheduling problems",
+      "Circuit design"
+    ],
+    "order_num": 14,
+    "category": "math"
+  },
+  {
+    "id": "number_theory",
+    "name": "Number Theory",
+    "level": "intermediate",
+    "subcategory": "pure_mathematics",
+    "description": "Number theory is the study of integers and their properties, particularly focused on prime numbers and divisibility.",
+    "key_concepts": [
+      "Divisibility: a divides b if b = ak for some integer k",
+      "Prime number: an integer > 1 whose only divisors are 1 and itself",
+      "Greatest common divisor (GCD): largest positive integer that divides two numbers",
+      "Least common multiple (LCM): smallest positive integer that is divisible by two numbers",
+      "Modular arithmetic: arithmetic for integers where numbers wrap around after reaching a fixed value"
+    ],
+    "theorems": [
+      "Fundamental Theorem of Arithmetic: every integer > 1 is either prime or can be uniquely expressed as a product of primes",
+      "Euclidean algorithm: efficient method for computing GCD",
+      "Fermat's Little Theorem: if p is prime and a is not divisible by p, then a^(p-1) \u2261 1 (mod p)",
+      "Chinese Remainder Theorem: solves systems of linear congruences",
+      "Euler's Theorem: generalizes Fermat's Little Theorem"
+    ],
+    "applications": [
+      "Cryptography (RSA encryption)",
+      "Hash functions",
+      "Random number generation",
+      "Error-correcting codes",
+      "Calendar calculations"
+    ],
+    "order_num": 15,
+    "category": "math"
+  },
+  {
+    "id": "optimization",
+    "name": "Optimization Theory",
+    "level": "advanced",
+    "subcategory": "applied_mathematics",
+    "description": "Optimization theory is the study of finding the best solution from all feasible solutions.",
+    "key_concepts": [
+      "Objective function: the function to be maximized or minimized",
+      "Constraints: conditions that limit the possible solutions",
+      "Feasible region: the set of all possible solutions that satisfy the constraints",
+      "Optimal solution: the solution that provides the best value of the objective function",
+      "Global vs. local optima: best solution overall vs. best in a neighborhood"
+    ],
+    "optimization_types": [
+      "Linear programming: optimizing a linear objective function with linear constraints",
+      "Nonlinear programming: involves nonlinear objective function or constraints",
+      "Integer programming: variables must take integer values",
+      "Dynamic programming: breaking problems into simpler subproblems",
+      "Convex optimization: special case with convex objective function and constraints"
+    ],
+    "algorithms": [
+      "Simplex method for linear programming",
+      "Gradient descent",
+      "Newton's method",
+      "Interior point methods",
+      "Genetic algorithms and evolutionary computation"
+    ],
+    "applications": [
+      "Resource allocation",
+      "Portfolio optimization",
+      "Machine learning (training neural networks)",
+      "Transportation and logistics",
+      "Production planning"
+    ],
+    "order_num": 16,
+    "category": "math"
+  },
+  {
+    "id": "calculus_multivariable",
+    "name": "Multivariable Calculus",
+    "level": "intermediate",
+    "subcategory": "calculus",
+    "description": "The extension of calculus to functions of multiple variables, dealing with partial derivatives, multiple integrals, and vector calculus.",
+    "key_concepts": [
+      "Partial derivatives: derivatives with respect to one variable while holding others constant",
+      "Gradient: vector of partial derivatives, pointing in direction of steepest increase",
+      "Multiple integrals: integration over regions in multiple dimensions",
+      "Line integrals: integration along a curve in space",
+      "Surface integrals: integration over a surface"
+    ],
+    "theorems": [
+      "Green's Theorem: relates line integral around simple closed curve to double integral over region inside",
+      "Stokes' Theorem: relates surface integral of curl to line integral around boundary",
+      "Divergence Theorem: relates surface integral of flux to volume integral of divergence",
+      "Chain Rule for partial derivatives"
+    ],
+    "applications": [
+      "Physics (electromagnetism, fluid dynamics)",
+      "Economics (optimization of multivariate functions)",
+      "Machine learning (gradient descent algorithms)",
+      "Computer graphics (vector fields, parametric surfaces)"
+    ],
+    "order_num": 17,
+    "category": "math"
+  },
+  {
+    "id": "calculus_differential_equations",
+    "name": "Differential Equations",
+    "level": "intermediate",
+    "subcategory": "calculus",
+    "description": "Equations that relate functions with their derivatives, used to model systems that change over time or space.",
+    "key_concepts": [
+      "Ordinary Differential Equations (ODEs): involve derivatives with respect to one variable",
+      "Partial Differential Equations (PDEs): involve partial derivatives of multivariate functions",
+      "Initial conditions: values of the function at a specific point",
+      "Boundary conditions: constraints on the solution at the boundaries of the domain",
+      "General and particular solutions"
+    ],
+    "solving_methods": [
+      "Separation of variables",
+      "Integrating factors",
+      "Variation of parameters",
+      "Power series methods",
+      "Numerical methods (Euler's method, Runge-Kutta)"
+    ],
+    "applications": [
+      "Physics (mechanics, heat flow, wave motion)",
+      "Population dynamics",
+      "Electrical circuits",
+      "Chemical reactions",
+      "Finance (Black-Scholes equation)"
+    ],
+    "order_num": 18,
+    "category": "math"
+  },
+  {
+    "id": "linear_algebra_spaces",
+    "name": "Vector Spaces",
+    "level": "beginner",
+    "subcategory": "linear_algebra",
+    "description": "Abstract mathematical structures that generalize the properties of vectors in physical space, focusing on linear combinations and transformations.",
+    "key_concepts": [
+      "Linear independence: vectors where no vector can be written as a linear combination of others",
+      "Basis: minimal set of vectors that spans the entire space",
+      "Dimension: number of vectors in a basis",
+      "Subspace: subset of a vector space that is itself a vector space",
+      "Linear transformation: function between vector spaces preserving vector addition and scalar multiplication"
+    ],
+    "properties": [
+      "Closure under addition and scalar multiplication",
+      "Presence of zero vector",
+      "Uniqueness of additive inverses",
+      "Associative and commutative properties of addition",
+      "Distributive properties of scalar multiplication"
+    ],
+    "applications": [
+      "Computer graphics (3D transformations)",
+      "Quantum mechanics (state spaces)",
+      "Signal processing (Fourier analysis)",
+      "Data analysis (principal component analysis)",
+      "Cryptography (linear codes)"
+    ],
+    "order_num": 19,
+    "category": "math"
+  },
+  {
+    "id": "statistics_regression",
+    "name": "Regression Analysis",
+    "level": "intermediate",
+    "subcategory": "statistics",
+    "description": "Statistical methods for estimating relationships among variables, particularly how a dependent variable changes when independent variables are varied.",
+    "key_models": [
+      "Simple linear regression: one dependent and one independent variable",
+      "Multiple linear regression: one dependent and multiple independent variables",
+      "Polynomial regression: regression with polynomial terms",
+      "Logistic regression: for categorical dependent variables",
+      "Non-linear regression: general model where parameters appear non-linearly"
+    ],
+    "evaluation_metrics": [
+      "R-squared: proportion of variance explained by the model",
+      "Adjusted R-squared: accounts for number of predictors",
+      "Mean Squared Error (MSE): average squared difference between predictions and actual values",
+      "Root Mean Squared Error (RMSE): square root of MSE",
+      "p-values: statistical significance of coefficients"
+    ],
+    "assumptions": [
+      "Linearity: relationship is linear in parameters",
+      "Independence of errors",
+      "Homoscedasticity: constant variance of errors",
+      "Normality of error distribution",
+      "No multicollinearity among independent variables"
+    ],
+    "applications": [
+      "Predictive modeling",
+      "Time series forecasting",
+      "Quality control",
+      "Econometrics",
+      "Biostatistics"
+    ],
+    "order_num": 20,
+    "category": "math"
+  },
+  {
+    "id": "statistics_machine_learning",
+    "name": "Statistical Machine Learning",
+    "level": "advanced",
+    "subcategory": "statistics",
+    "description": "Methods that combine statistical techniques with machine learning algorithms to build predictive models from data.",
+    "algorithms": [
+      "Linear and logistic regression",
+      "Decision trees and random forests",
+      "Support vector machines",
+      "k-nearest neighbors",
+      "Neural networks"
+    ],
+    "concepts": [
+      "Supervised vs. unsupervised learning",
+      "Training, validation, and test sets",
+      "Overfitting and underfitting",
+      "Bias-variance tradeoff",
+      "Feature selection and engineering"
+    ],
+    "evaluation_techniques": [
+      "Cross-validation",
+      "Confusion matrix (precision, recall, F1-score)",
+      "ROC curve and AUC",
+      "Learning curves",
+      "Hyperparameter tuning"
+    ],
+    "applications": [
+      "Image and speech recognition",
+      "Natural language processing",
+      "Recommendation systems",
+      "Anomaly detection",
+      "Medical diagnosis"
+    ],
+    "order_num": 21,
+    "category": "math"
+  },
+  {
+    "id": "discrete_math_algorithms",
+    "name": "Algorithm Analysis",
+    "level": "intermediate",
+    "subcategory": "discrete_mathematics",
+    "description": "The branch of mathematics concerned with the rigorous study of algorithms' performance and computational complexity.",
+    "key_concepts": [
+      "Time complexity: how runtime grows with input size",
+      "Space complexity: how memory usage grows with input size",
+      "Big O notation: upper bound on growth rate",
+      "Best, worst, and average case analysis",
+      "Amortized analysis: analyzing sequence of operations"
+    ],
+    "complexity_classes": [
+      "O(1): Constant time",
+      "O(log n): Logarithmic time",
+      "O(n): Linear time",
+      "O(n log n): Linearithmic time",
+      "O(n\u00b2), O(n\u00b3): Polynomial time",
+      "O(2\u207f), O(n!): Exponential and factorial time"
+    ],
+    "analysis_techniques": [
+      "Recurrence relations",
+      "Master theorem",
+      "Substitution method",
+      "Recursion tree method",
+      "Potential function method (for amortized analysis)"
+    ],
+    "applications": [
+      "Algorithm design and optimization",
+      "Performance prediction",
+      "Computational feasibility assessment",
+      "Resource allocation planning",
+      "Database query optimization"
+    ],
+    "order_num": 22,
+    "category": "math"
+  },
+  {
+    "id": "calculus_numerical_methods",
+    "name": "Numerical Methods",
+    "level": "advanced",
+    "subcategory": "calculus",
+    "description": "Techniques for approximating solutions to mathematical problems that cannot be solved exactly or efficiently by analytical methods.",
+    "key_methods": [
+      "Root finding: bisection method, Newton's method, secant method",
+      "Numerical integration: trapezoidal rule, Simpson's rule, Gaussian quadrature",
+      "Numerical differentiation: finite difference methods",
+      "Solving ODEs: Euler's method, Runge-Kutta methods",
+      "Solving PDEs: finite difference, finite element, finite volume methods"
+    ],
+    "concepts": [
+      "Discretization: converting continuous problems to discrete approximations",
+      "Convergence: whether a method approaches the exact solution as step size decreases",
+      "Stability: whether small errors remain bounded during computation",
+      "Consistency: whether discretization approaches the original equation as step size decreases",
+      "Error analysis: roundoff error, truncation error, total error estimation"
+    ],
+    "applications": [
+      "Scientific computing",
+      "Engineering simulations",
+      "Weather forecasting",
+      "Financial modeling",
+      "Computer graphics"
+    ],
+    "order_num": 23,
+    "category": "math"
+  },
+  {
+    "id": "linear_algebra_transforms",
+    "name": "Linear Transformations",
+    "level": "advanced",
+    "subcategory": "linear_algebra",
+    "description": "Functions between vector spaces that preserve vector addition and scalar multiplication, fundamental to understanding how geometric operations work.",
+    "key_concepts": [
+      "Kernel (null space): vectors that map to zero",
+      "Range (image): set of all possible outputs",
+      "Isomorphism: bijective linear transformation between vector spaces",
+      "Rank-nullity theorem: dim(kernel) + dim(range) = dim(domain)",
+      "Change of basis: representing the same transformation in different coordinate systems"
+    ],
+    "common_transformations": [
+      "Rotations: preserve angles and distances",
+      "Reflections: mirror images across a subspace",
+      "Projections: map vectors onto a subspace",
+      "Scaling: multiply vectors by constant factors",
+      "Shearing: transform rectangles into parallelograms"
+    ],
+    "applications": [
+      "Computer graphics (3D rendering)",
+      "Quantum mechanics (observables as operators)",
+      "Signal processing (Fourier transform, wavelets)",
+      "Machine learning (dimensionality reduction)",
+      "Control theory (state-space representations)"
+    ],
+    "order_num": 24,
+    "category": "math"
+  }
+]
