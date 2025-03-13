@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Algo Ustadh - Your Interactive CS Professor
 
 Algo Ustadh is a comprehensive educational platform designed to help new developers master computer science fundamentals through interactive lessons, visualizations, and guided problem-solving. With a focus on learning rather than competitive programming, Algo Ustadh makes complex concepts accessible and engaging.
